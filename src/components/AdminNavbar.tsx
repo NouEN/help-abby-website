@@ -1,10 +1,7 @@
 import { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomeContent from "./home/HomeContent";
-import FoodContent from "./food/FoodContent";
 
-function Navbar() {
+function AdminNavbar() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -12,9 +9,9 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-light">
       <div className="container-fluid">
-        <Link to="/" className="navbar-brand" aria-current="page">
+        <a className="navbar-brand" href="#">
           HelpAbby
-        </Link>
+        </a>
         <button
           className="navbar-toggler"
           type="button"
@@ -29,23 +26,18 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link to="/" className="nav-link" aria-current="page">
+              <Link to="/adminHome" className="nav-link" aria-current="page">
                 Home
               </Link>
             </li>
             <li className="nav-item active">
-              <Link to="/food" className="nav-link">
-                Food
+              <Link to="/adminFoodList" className="nav-link">
+                Food List
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/training" className="nav-link">
-                Training
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/myths" className="nav-link">
-                Myths
+                Myth List
               </Link>
             </li>
           </ul>
@@ -55,4 +47,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default AdminNavbar;
