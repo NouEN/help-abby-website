@@ -6,11 +6,9 @@ class NavbarView extends Component {
     return (
       <nav className="navbar navbar-expand-lg bg-light">
         <div className="container-fluid">
-          <Link to="/">
-            <a className="navbar-brand" href="/">
-              HelpAbby
-            </a>
-          </Link>
+          <a className="navbar-brand" href="/">
+            HelpAbby
+          </a>
           <button
             className="navbar-toggler"
             type="button"
