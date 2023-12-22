@@ -72,11 +72,6 @@ export const HomeContent = (): JSX.Element => {
                         <div className="title-4">Abby</div>
                       </div>
                     </div>
-                    <div className="icon-buttons">
-                      <div className="icon">😊</div>
-                      <div className="icon">👍</div>
-                      <div className="icon">💪</div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -99,11 +94,6 @@ export const HomeContent = (): JSX.Element => {
                       <div className="title-wrapper">
                         <div className="title-4">School Doctor</div>
                       </div>
-                    </div>
-                    <div className="icon-buttons">
-                      <div className="icon">😊</div>
-                      <div className="icon">👍</div>
-                      <div className="icon">💪</div>
                     </div>
                   </div>
                 </div>
@@ -134,11 +124,6 @@ export const HomeContent = (): JSX.Element => {
                         <div className="title-4">PE Teacher</div>
                       </div>
                     </div>
-                    <div className="icon-buttons">
-                      <div className="icon">😊</div>
-                      <div className="icon">👍</div>
-                      <div className="icon">💪</div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -166,11 +151,6 @@ export const HomeContent = (): JSX.Element => {
                         <div className="title-4">Abby</div>
                       </div>
                     </div>
-                    <div className="icon-buttons">
-                      <div className="icon">😊</div>
-                      <div className="icon">👍</div>
-                      <div className="icon">💪</div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -192,11 +172,6 @@ export const HomeContent = (): JSX.Element => {
                       <div className="title-wrapper">
                         <div className="title-4">Abby</div>
                       </div>
-                    </div>
-                    <div className="icon-buttons">
-                      <div className="icon">😊</div>
-                      <div className="icon">👍</div>
-                      <div className="icon">💪</div>
                     </div>
                   </div>
                 </div>
