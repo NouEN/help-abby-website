@@ -24,11 +24,13 @@ export const HomeContent = (): JSX.Element => {
             Join Abby&#39;s journey to overcome her weight issues and adopt a
             healthy lifestyle.
           </p>
-          <button className="button">
-            <div className="primary">
-              <div className="title-2">Start Now</div>
-            </div>
-          </button>
+          <Link to="/food">
+            <button className="button">
+              <div className="primary">
+                <div className="title-2">Start Now</div>
+              </div>
+            </button>
+          </Link>
         </div>
         <div className="image-container">
           <div className="image" />
