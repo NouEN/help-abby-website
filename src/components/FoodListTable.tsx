@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import AdminNavbar from "./AdminNavbar";
+import { Link } from "react-router-dom";
 
 interface Food {
   foodId: number;
@@ -62,9 +63,12 @@ class FoodListTable extends Component<Food> {
     return (
       <div>
         <AdminNavbar></AdminNavbar>
-        <button type="button" onClick={this.handleAddFood}>
-          Register Food
-        </button>
+        <Link to="adminRegisterFood">
+          <button type="button" onClick={this.handleAddFood}>
+            Register Food
+          </button>
+        </Link>
+
         <table className="table">
           <thead>
             <tr>
@@ -90,7 +94,10 @@ class FoodListTable extends Component<Food> {
                   <td>{oneFood.fat}</td>
                   <td>{oneFood.source}</td>
                   <td>
-                    <button>Edit</button>
+                    <Link to="/adminEditFood">
+                      <button>Edit</button>
+                    </Link>
+
                     <button>Delete</button>
                   </td>
                 </tr>
