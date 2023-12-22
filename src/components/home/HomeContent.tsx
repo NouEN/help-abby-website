@@ -21,6 +21,7 @@ class HomeContent extends Component {
             <h1>She is a lovely 15 years old girl and a foodie.</h1>
           </div>
         </div>
+        <div></div>
       </>
     );
   }

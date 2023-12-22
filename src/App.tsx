@@ -4,7 +4,8 @@ import HomeContent from "./components/home/HomeContent";
 import FoodContent from "./components/food/FoodContent";
 import AdminLogin from "./components/AdminLogin";
 import AdminHome from "./components/AdminHome";
-import AdminFoodList from "./components/AdminFoodList";
+import FoodListTable from "./components/FoodListTable";
+import AdminMythList from "./components/AdminMythList";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
         <Route path="/myths" element={<HomeContent />} />
         <Route path="/adminLogin" element={<AdminLogin />} />
         <Route path="/adminHome" element={<AdminHome />}></Route>
-        <Route path="/adminFoodList" element={<AdminFoodList />}></Route>
+        <Route path="/adminFoodList" element={<FoodListTable />}></Route>
+        <Route path="/adminmythlist" element={<AdminMythList />}></Route>
       </Routes>
     </BrowserRouter>
   );

@@ -36,7 +36,7 @@ function AdminNavbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/training" className="nav-link">
+              <Link to="/adminmythlist" className="nav-link">
                 Myth List
               </Link>
             </li>
