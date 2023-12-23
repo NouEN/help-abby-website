@@ -34,11 +34,22 @@ class FoodContent extends Component<FoodState> {
               The first key to achieving the healthy body is through your food.
               Food is an essential part in our life to get the energy to get
               through the day. But to lose weight we need to know exactly how
-              many calories we need to consume in a day. You can find out by
-              inputing your measurement in the calculator. Try it out yourself!{" "}
+              many calories we need to consume in a day.
+            </p>
+            <p className="div">
+              Total calories that we burn throughout the day just by breathing
+              and doing nothing is called Basal Metabolic Rate (BMR). Meanwhile
+              total calories that we burn by processing the food we eat,
+              exercising, studying, and other leisure activities is called Total
+              Daily Energy Expenditure (TDEE). Let's find out more below!{" "}
+            </p>
+            <p className="div">
+              Currently Abby is 15 years old, 160 cm, and 85kg with Sedentary
+              activity level. Can you help her figure out what her BMR and TDEE
+              calories is?
             </p>
 
-            <div>
+            <div className="calculator">
               <form action="">
                 <div className="title">Enter Your Information</div>
                 <div className="div-form">
@@ -54,8 +65,11 @@ class FoodContent extends Component<FoodState> {
 
                 <div className="div-form">
                   <label className="title-4">Gender</label>
-                  <select className="textfield">
-                    <option selected>Choose...</option>
+                  <select
+                    className="textfield"
+                    defaultValue=""
+                    placeholder="Choose.."
+                  >
                     <option value="female">Female</option>
                     <option value="male">Male</option>
                   </select>
@@ -126,83 +140,158 @@ class FoodContent extends Component<FoodState> {
               </form>
             </div>
 
-            <p className="div">Currently Abby </p>
+            <div className="list-calorie">
+              <div className="metric">
+                <div className="title-13">Basal Metabolic Rate</div>
+                <div className="data">1300</div>
+              </div>
+
+              <div className="metric">
+                <div className="title-13">Total Daily Energy Expenditure</div>
+                <div className="data">2000</div>
+              </div>
+            </div>
+
+            <div className="div">
+              <div className="title">Great!</div>
+              <div className="div">
+                Now we know what her BMR and TDEE calories is. To lose weight,
+                we should eat at 200 - 500 less than our TDEE calories. Let's
+                find out what Abby can eat in that range of calories.
+              </div>
+              <div className="button-eat-container">
+                <button className="button btn-eat">
+                  <div className="primary">
+                    <div className="title-2">What To Eat</div>
+                  </div>
+                </button>
+              </div>
+            </div>
           </div>
-          <img className="vector" src="vector-200.svg" alt="Vector" />
         </div>
 
         <div className="section">
-          <div className="container-2">
-            <div className="title-3">Macronutrients</div>
+          <div className="container">
+            <div className="title">Macronutrients</div>
             <p className="p">Learn about the three essential macronutrients</p>
-          </div>
-        </div>
 
-        <div className="list">
-          <div className="row">
-            <div className="article">
-              <div className="image-container">
-                <div className="image"></div>
-              </div>
-              <div className="frame">
-                <div className="title-4">Carbohydrates</div>
-                <div className="subtitle">Primary source of energy</div>
-                <p className="subtitle-2">
-                  Carbohydrates provide the body with energy for daily
-                  activities and exercise. They are found in foods like bread,
-                  rice, and pasta.
-                </p>
-                <div className="selection">
-                  <div className="label-normal">
-                    <div className="label-text">Energy</div>
+            <div className="list-nutrition">
+              <div className="row">
+                <div className="article">
+                  <div className="image-container">
+                    <div className="image"></div>
                   </div>
-                  <div className="label-normal">
-                    <div className="label-text">Fiber</div>
+                  <div className="frame">
+                    <div className="title-4">Carbohydrates</div>
+                    <div className="subtitle">Primary source of energy</div>
+                    <p className="subtitle-2">
+                      Carbohydrates provide the body with energy for daily
+                      activities and exercise. They are found in foods like
+                      bread, rice, and pasta.
+                    </p>
+                    <div className="selection">
+                      <div className="label-normal">
+                        <div className="label-text">Energy</div>
+                      </div>
+                      <div className="label-normal">
+                        <div className="label-text">Fiber</div>
+                      </div>
+                    </div>
+
+                    <div className="user">
+                      <div className="avatar">
+                        <div className="avatar-2"></div>
+                        <div className="title-wrapper">
+                          <div className="title-5">Dr.Nutrition</div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
+              </div>
 
-                <div className="user">
-                  <div className="avatar">
-                    <div className="avatar-2"></div>
-                    <div className="title-wrapper">
-                      <div className="title-5">Dr.Nutrition</div>
+              <div className="row">
+                <div className="article">
+                  <div className="image-container">
+                    <div className="image"></div>
+                  </div>
+                  <div className="frame">
+                    <div className="title-4">Carbohydrates</div>
+                    <div className="subtitle">Primary source of energy</div>
+                    <p className="subtitle-2">
+                      Carbohydrates provide the body with energy for daily
+                      activities and exercise. They are found in foods like
+                      bread, rice, and pasta.
+                    </p>
+                    <div className="selection">
+                      <div className="label-normal">
+                        <div className="label-text">Energy</div>
+                      </div>
+                      <div className="label-normal">
+                        <div className="label-text">Fiber</div>
+                      </div>
+                    </div>
+
+                    <div className="user">
+                      <div className="avatar">
+                        <div className="avatar-2"></div>
+                        <div className="title-wrapper">
+                          <div className="title-5">Dr.Nutrition</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="row">
+                <div className="article">
+                  <div className="image-container">
+                    <div className="image"></div>
+                  </div>
+                  <div className="frame">
+                    <div className="title-4">Carbohydrates</div>
+                    <div className="subtitle">Primary source of energy</div>
+                    <p className="subtitle-2">
+                      Carbohydrates provide the body with energy for daily
+                      activities and exercise. They are found in foods like
+                      bread, rice, and pasta.
+                    </p>
+                    <div className="selection">
+                      <div className="label-normal">
+                        <div className="label-text">Energy</div>
+                      </div>
+                      <div className="label-normal">
+                        <div className="label-text">Fiber</div>
+                      </div>
+                    </div>
+
+                    <div className="user">
+                      <div className="avatar">
+                        <div className="avatar-2"></div>
+                        <div className="title-wrapper">
+                          <div className="title-5">Dr.Nutrition</div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div className="row">
-            <div className="article">
-              <div className="image-container">
-                <div className="image"></div>
+            <div className="div">
+              <div className="title">
+                Ohoho! You're getting smarter now, eh?
               </div>
-              <div className="frame">
-                <div className="title-4">Carbohydrates</div>
-                <div className="subtitle">Primary source of energy</div>
-                <p className="subtitle-2">
-                  Carbohydrates provide the body with energy for daily
-                  activities and exercise. They are found in foods like bread,
-                  rice, and pasta.
-                </p>
-                <div className="selection">
-                  <div className="label-normal">
-                    <div className="label-text">Energy</div>
+              <p className="p">
+                Curious to find out more about food nutritional value?
+              </p>
+              <div className="button-eat-container">
+                <button className="button btn-eat">
+                  <div className="primary">
+                    <div className="title-2">List of Nutritional Value</div>
                   </div>
-                  <div className="label-normal">
-                    <div className="label-text">Fiber</div>
-                  </div>
-                </div>
-
-                <div className="user">
-                  <div className="avatar">
-                    <div className="avatar-2"></div>
-                    <div className="title-wrapper">
-                      <div className="title-5">Dr.Nutrition</div>
-                    </div>
-                  </div>
-                </div>
+                </button>
               </div>
             </div>
           </div>

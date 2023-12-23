@@ -76,6 +76,22 @@
     position: relative;
     width: 100%;
   }
+
+  .section .metric{
+    align-items: flex-start;
+    border: 1px solid;
+    border-color: #0000001a;
+    border-radius: 6px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 4px;
+    overflow: hidden;
+    padding: 16px;
+    position: relative;
+
+  }
   
   .page .container {
     align-items: flex-start;
@@ -97,6 +113,26 @@
     line-height: 48px;
     margin-top: -1px;
     position: relative;
+  }
+
+  .section .metric .data {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    align-self: stretch;
+    color: #000000;
+    font-family: "Roboto-Bold", Helvetica;
+    font-size: 28px;
+    font-weight: 100;
+    height: 36px;
+    letter-spacing: 0;
+    line-height: 36px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
   }
   
   .page .div {
@@ -137,6 +173,11 @@
   .page .btn-form{
     margin: 10px ;
     margin-top: 20px;
+  }
+  .button-eat-container {
+  text-align: center;
+  margin: 30px;
+  justify-content: center;
   }
   
   .page .primary {
@@ -240,6 +281,26 @@
     width: 100%;
   }
   
+
+  .page .list-nutrition {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    padding: 20px 0px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .calculator{
+    border: 1px solid;
+    border-color: #0000001a;
+    border-radius: 6px;
+    padding: 12px;
+  }
   .page .row {
     align-items: center;
     align-self: stretch;
@@ -618,6 +679,15 @@
     position: relative;
     width: 100%;
   }
+
+  .page .list-calorie{
+    align-items: center;
+    display: flex;;
+    gap: 20px;
+    padding: 20px 0px;
+    position: relative;
+    width: 100%;
+  }
   
   .page .post {
     align-items: center;
@@ -811,5 +881,18 @@
     position: relative;
     white-space: nowrap;
     width: fit-content;
+  }
+
+  .page .title-13 {
+    align-self: stretch;
+    color: #000000;
+    font-family: "Roboto-Medium", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 28px;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
   }
   
