@@ -1,14 +1,8 @@
 import { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomeContent from "./HomeContent";
-import FoodContent from "./FoodContent";
 
 function Navbar() {
-  const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
-
   return (
     <nav>
       <div>
