@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../style.css";
 import Navbar from "./Navbar";
+import { Link } from "react-router-dom";
 
 interface FoodState {
   submitted: boolean;
@@ -11,7 +12,7 @@ interface FoodState {
   activity: string;
 }
 
-class FoodContent extends Component<FoodState> {
+class FoodContent extends Component {
   constructor(props: FoodState) {
     super(props);
     this.state = {
@@ -23,6 +24,7 @@ class FoodContent extends Component<FoodState> {
       activity: "",
     };
   }
+
   render() {
     return (
       <div className="page">
@@ -41,7 +43,7 @@ class FoodContent extends Component<FoodState> {
               and doing nothing is called Basal Metabolic Rate (BMR). Meanwhile
               total calories that we burn by processing the food we eat,
               exercising, studying, and other leisure activities is called Total
-              Daily Energy Expenditure (TDEE). Let's find out more below!{" "}
+              Daily Energy Expenditure (TDEE). Let's find out more below!
             </p>
             <p className="div">
               Currently Abby is 15 years old, 160 cm, and 85kg with Sedentary
@@ -160,11 +162,13 @@ class FoodContent extends Component<FoodState> {
                 find out what Abby can eat in that range of calories.
               </div>
               <div className="button-eat-container">
-                <button className="button btn-eat">
-                  <div className="primary">
-                    <div className="title-2">What To Eat</div>
-                  </div>
-                </button>
+                <Link to="/whattoeat">
+                  <button className="button btn-eat">
+                    <div className="primary">
+                      <div className="title-2">What To Eat</div>
+                    </div>
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
