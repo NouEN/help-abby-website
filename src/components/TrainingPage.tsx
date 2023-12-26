@@ -34,7 +34,7 @@ class TrainingPage extends Component {
 
         <div className="section">
           <div className="container">
-            <div className="title">Examples of Cardio Exercises</div>
+            <div className="title-7">Examples of Cardio Exercises</div>
           </div>
           <div className="list-cardio">
             <div className="row">
@@ -46,6 +46,66 @@ class TrainingPage extends Component {
                 <div className="frame">
                   <div className="title-3">Running</div>
                   <div className="subtitle">Outdoor and indoor activity</div>
+                  <p className="div">
+                    Running is a great way to improve your stamina and burn
+                    calories.
+                  </p>
+                  <div className="selection">
+                    <div className="label-normal">
+                      <div className="label-text">Cardiovascular</div>
+                    </div>
+                    <div className="label-normal">
+                      <div className="label-text">Stamina</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="row">
+              <div className="article">
+                <div className="image-wrapper-cardio">
+                  <div className="image-cardio"></div>
+                </div>
+                <div className="frame">
+                  <div className="title-3">Cycling</div>
+                  <div className="subtitle">Outdoor and indoor activity</div>
+                  <p className="div">
+                    Cycling is a low-impact exercises that is great for
+                    improving your stamina and burn calories.
+                  </p>
+                  <div className="selection">
+                    <div className="label-normal">
+                      <div className="label-text">Cardiovascular</div>
+                    </div>
+                    <div className="label-normal">
+                      <div className="label-text">Stamina</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="row">
+              <div className="article">
+                <div className="image-wrapper-cardio">
+                  <div className="image-cardio"></div>
+                </div>
+                <div className="frame">
+                  <div className="title-3">Cycling</div>
+                  <div className="subtitle">Outdoor and indoor activity</div>
+                  <p className="div">
+                    Cycling is a low-impact exercises that is great for
+                    improving your stamina and burn calories.
+                  </p>
+                  <div className="selection">
+                    <div className="label-normal">
+                      <div className="label-text">Cardiovascular</div>
+                    </div>
+                    <div className="label-normal">
+                      <div className="label-text">Stamina</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
