@@ -248,6 +248,15 @@
     flex-grow: 1;
     position: relative;
   }
+
+  .page .image-cardio {
+    align-self: stretch;
+    background-color: #d8d8d880;
+    flex: 1;
+    flex-grow: 1;
+    position: relative;
+  }
+  
   
   .page .vector {
     height: 1px;
@@ -267,6 +276,15 @@
     padding: 20px 0px;
     position: relative;
   }
+
+  .page .image-wrapper-cardio {
+    align-items: flex-start;
+    display: flex;
+    height: 100px;
+    width: 100px;
+    position: relative;
+  }
+  
   
   .page .list {
     align-items: center;
@@ -281,6 +299,18 @@
     width: 100%;
   }
   
+  .page .list-cardio {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    padding: 20px 0px;
+    position: relative;
+    
+  }
 
   .page .list-nutrition {
     align-items: center;

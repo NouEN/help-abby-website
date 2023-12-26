@@ -10,6 +10,7 @@ import AdminRegisterFood from "./components/AdminRegisterFood";
 import { AdminEditFood } from "./components/AdminEditFood";
 import WhatToEat from "./components/WhatToEat";
 import { useState } from "react";
+import TrainingPage from "./components/TrainingPage";
 
 type FoodProps = {
   foodId: string;
@@ -60,7 +61,7 @@ function App() {
             ></WhatToEat>
           }
         ></Route>
-        <Route path="/training" element={<HomeContent />} />
+        <Route path="/training" element={<TrainingPage></TrainingPage>} />
         <Route path="/myths" element={<HomeContent />} />
         <Route path="/adminLogin" element={<AdminLogin />} />
         <Route path="/adminHome" element={<AdminHome />}></Route>

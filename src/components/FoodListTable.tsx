@@ -63,7 +63,7 @@ class FoodListTable extends Component<Food> {
     return (
       <div>
         <AdminNavbar></AdminNavbar>
-        <Link to="adminRegisterFood">
+        <Link to="/adminRegisterFood">
           <button type="button" onClick={this.handleAddFood}>
             Register Food
           </button>

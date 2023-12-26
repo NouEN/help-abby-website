@@ -7,11 +7,7 @@ class HomeContent extends Component {
   render() {
     return (
       <div className="page">
-        <div className="top-bar">
-          <div className="rectangle" />
-          <div className="title">HelpAbby</div>
-          <Navbar></Navbar>
-        </div>
+        <Navbar></Navbar>
         <div className="section">
           <div className="container">
             <div className="subtitle">

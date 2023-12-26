@@ -298,6 +298,11 @@ class FoodContent extends Component {
                 </button>
               </div>
             </div>
+            <div className="container-wrapper">
+              <div className="container-3">
+                <p className="title-1">HelpAbby © 2024. All rights reserved.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
