@@ -72,7 +72,8 @@ class TrainingPage extends Component {
                   <div className="subtitle">Outdoor and indoor activity</div>
                   <p className="div">
                     Cycling is a low-impact exercises that is great for
-                    improving your stamina and burn calories.
+                    improving your stamina and burn calories. It is also working
+                    your legs.
                   </p>
                   <div className="selection">
                     <div className="label-normal">
@@ -92,11 +93,12 @@ class TrainingPage extends Component {
                   <div className="image-cardio"></div>
                 </div>
                 <div className="frame">
-                  <div className="title-3">Cycling</div>
+                  <div className="title-3">Swimming</div>
                   <div className="subtitle">Outdoor and indoor activity</div>
                   <p className="div">
-                    Cycling is a low-impact exercises that is great for
-                    improving your stamina and burn calories.
+                    Swimming is a full body exercise that will train your heart
+                    without stressing your body. It is a low impact exercise
+                    which means it is suitable for people with joint problems.
                   </p>
                   <div className="selection">
                     <div className="label-normal">
@@ -107,6 +109,46 @@ class TrainingPage extends Component {
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="section">
+          <div className="container">
+            <div className="text-wrapper">Benefits of Cardio Training</div>
+          </div>
+          <div className="list-benefit">
+            <div className="card">
+              <div className="image-container-card">
+                <div className="image">
+                  <p className="text-wrapper-card">image of a person running</p>
+                  <div className="tag">
+                    <div className="text-card">Cardiovascular Health</div>
+                  </div>
+                </div>
+              </div>
+              <div className="text-content">
+                <div className="div">Improved heart health</div>
+                <p className="subtitle-card">
+                  Regular cardio exercise strengthens your heart muscle.
+                </p>
+              </div>
+            </div>
+            <div className="card">
+              <div className="image-container-card">
+                <div className="image">
+                  <p className="text-wrapper-card">image of a person running</p>
+                  <div className="tag">
+                    <div className="text-card">Cardiovascular Health</div>
+                  </div>
+                </div>
+              </div>
+              <div className="text-content">
+                <div className="div">Improved heart health</div>
+                <p className="subtitle-card">
+                  Regular cardio exercise strengthens your heart muscle.
+                </p>
               </div>
             </div>
           </div>
