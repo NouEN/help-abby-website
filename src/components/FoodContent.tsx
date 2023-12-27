@@ -32,20 +32,20 @@ class FoodContent extends Component {
         <div className="section">
           <div className="container">
             <div className="text-wrapper">Food</div>
-            <p className="div">
+            <p className="div-desc">
               The first key to achieving the healthy body is through your food.
               Food is an essential part in our life to get the energy to get
               through the day. But to lose weight we need to know exactly how
               many calories we need to consume in a day.
             </p>
-            <p className="div">
+            <p className="div-desc">
               Total calories that we burn throughout the day just by breathing
               and doing nothing is called Basal Metabolic Rate (BMR). Meanwhile
               total calories that we burn by processing the food we eat,
               exercising, studying, and other leisure activities is called Total
               Daily Energy Expenditure (TDEE). Let's find out more below!
             </p>
-            <p className="div">
+            <p className="div-desc">
               Currently Abby is 15 years old, 160 cm, and 85kg with Sedentary
               activity level. Can you help her figure out what her BMR and TDEE
               calories is?
@@ -156,7 +156,7 @@ class FoodContent extends Component {
 
             <div className="div">
               <div className="title">Great!</div>
-              <div className="div">
+              <div className="div-desc">
                 Now we know what her BMR and TDEE calories is. To lose weight,
                 we should eat at 200 - 500 less than our TDEE calories. Let's
                 find out what Abby can eat in that range of calories.
@@ -177,7 +177,9 @@ class FoodContent extends Component {
         <div className="section">
           <div className="container">
             <div className="title">Macronutrients</div>
-            <p className="p">Learn about the three essential macronutrients</p>
+            <p className="div-desc">
+              Learn about the three essential macronutrients
+            </p>
 
             <div className="list-nutrition">
               <div className="row">
@@ -186,8 +188,10 @@ class FoodContent extends Component {
                     <div className="image"></div>
                   </div>
                   <div className="frame">
-                    <div className="title-4">Carbohydrates</div>
-                    <div className="subtitle">Primary source of energy</div>
+                    <div className="title-3">Carbohydrates</div>
+                    <div className="subtitle-macro">
+                      Primary source of energy
+                    </div>
                     <p className="subtitle-2">
                       Carbohydrates provide the body with energy for daily
                       activities and exercise. They are found in foods like
@@ -220,19 +224,21 @@ class FoodContent extends Component {
                     <div className="image"></div>
                   </div>
                   <div className="frame">
-                    <div className="title-4">Carbohydrates</div>
-                    <div className="subtitle">Primary source of energy</div>
+                    <div className="title-3">Protein</div>
+                    <div className="subtitle-macro">
+                      Building Blocks for Growth and Repair
+                    </div>
                     <p className="subtitle-2">
-                      Carbohydrates provide the body with energy for daily
-                      activities and exercise. They are found in foods like
-                      bread, rice, and pasta.
+                      Protein is essential for muscle growth and repair, as well
+                      as supporting various bodily functions. Sources of protein
+                      include meat, fish, and legumes.
                     </p>
                     <div className="selection">
                       <div className="label-normal">
-                        <div className="label-text">Energy</div>
+                        <div className="label-text">Muscle</div>
                       </div>
                       <div className="label-normal">
-                        <div className="label-text">Fiber</div>
+                        <div className="label-text">Repair</div>
                       </div>
                     </div>
 
@@ -254,19 +260,21 @@ class FoodContent extends Component {
                     <div className="image"></div>
                   </div>
                   <div className="frame">
-                    <div className="title-4">Carbohydrates</div>
-                    <div className="subtitle">Primary source of energy</div>
+                    <div className="title-3">Fats</div>
+                    <div className="subtitle-macro">
+                      Energy Storage and Insulation
+                    </div>
                     <p className="subtitle-2">
-                      Carbohydrates provide the body with energy for daily
-                      activities and exercise. They are found in foods like
-                      bread, rice, and pasta.
+                      Fats provide long-term energy storage for the body, as
+                      well as insulation and protection of vital organs. They
+                      can be found in foods such as nuts, oils, and avocados.
                     </p>
                     <div className="selection">
                       <div className="label-normal">
-                        <div className="label-text">Energy</div>
+                        <div className="label-text">Energy Storage</div>
                       </div>
                       <div className="label-normal">
-                        <div className="label-text">Fiber</div>
+                        <div className="label-text">Insulation</div>
                       </div>
                     </div>
 
@@ -282,12 +290,15 @@ class FoodContent extends Component {
                 </div>
               </div>
             </div>
-
+          </div>
+        </div>
+        <div className="section">
+          <div className="container">
             <div className="div">
               <div className="title">
                 Ohoho! You're getting smarter now, eh?
               </div>
-              <p className="p">
+              <p className="div">
                 Curious to find out more about food nutritional value?
               </p>
               <div className="button-eat-container">
@@ -298,6 +309,27 @@ class FoodContent extends Component {
                 </button>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div className="section">
+          <div className="container">
+            <div className="div">
+              <p className="title">Or ready to get into the next step?</p>
+              <div className="button-eat-container">
+                <Link to="/training">
+                  <button className="button btn-eat">
+                    <div className="secondary">
+                      <div className="title-3">Go to Training➡️ </div>
+                    </div>
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="section">
+          <div className="container">
             <div className="container-wrapper">
               <div className="container-3">
                 <p className="title-1">HelpAbby © 2024. All rights reserved.</p>

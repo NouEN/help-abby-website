@@ -40,6 +40,20 @@
     line-height: 36px;
     position: relative;
   }
+
+  .frame .title-macro {
+    color: #000000;
+    flex: 1;
+    font-family: "Roboto-Medium", Helvetica;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 28px;
+    left: 0;
+    top: 0;
+    width: 372px;
+    position: fixed;
+  }
   
   .page .navbar {
     align-items: center;
@@ -115,6 +129,32 @@
     position: relative;
   }
 
+  .page .text-wrapper-benefit-title{
+    align-self: stretch;
+    color: #000000;
+    font-family: "Roboto-Bold", Helvetica;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 8px;
+    margin-top: -1px;
+    position: relative;
+  }
+
+
+  .page .text-wrapper-title {
+    align-self: stretch;
+    color: #000000;
+    font-family: "Roboto-Bold", Helvetica;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 48px;
+    margin-top: -1px;
+    text-align: center;
+    position: relative;
+  }
+
   .page .text-wrapper-card {
     color: #000000;
     font-family: "Roboto-Regular", Helvetica;
@@ -175,6 +215,17 @@
     position: relative;
   }
 
+  .page .div-desc {
+    align-self: stretch;
+    color: #000000;
+    font-family: "Roboto-Regular", Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 24px;
+    position: relative;
+  }
+
   .page .div-form {
     align-self: stretch;
     color: #000000;
@@ -197,16 +248,19 @@
     flex-direction: column;
     gap: 12px;
     position: relative;
+
   }
 
   .page .btn-form{
     margin: 10px ;
     margin-top: 20px;
   }
-  .button-eat-container {
+
+  .container .button-eat-container {
   text-align: center;
-  margin: 30px;
+  margin: 10px;
   justify-content: center;
+  padding: 50px;
   }
   
   .page .primary {
@@ -256,6 +310,14 @@
     flex-grow: 1;
     height: 400px;
     padding: 4px 0px;
+    position: relative;
+  }
+
+  .page .image-container-benefit {
+    align-items: flex-start;
+    display: flex;
+    height: 100px;
+    width: 100px;
     position: relative;
   }
 
@@ -358,6 +420,18 @@
     position: relative;
     
   }
+  .page .list-cardio {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    padding: 20px 0px;
+    position: relative;
+    
+  }
 
   .page .list-nutrition {
     align-items: center;
@@ -408,6 +482,15 @@
     height: 100px;
     position: relative;
     width: 100px;
+  }
+
+  .page .div-wrapper-benefit {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    height: 240px;
+    position: relative;
+    width: 100%;
   }
   
   .page .image-2 {
@@ -564,6 +647,17 @@
   }
   
   .page .subtitle {
+    align-self: stretch;
+    color: #00000080;
+    font-family: "Roboto-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 20px;
+    position: relative;
+  }
+
+  .page .subtitle-macro {
     align-self: stretch;
     color: #00000080;
     font-family: "Roboto-Regular", Helvetica;
@@ -758,6 +852,7 @@
     letter-spacing: 0;
     line-height: 48px;
     margin-top: -1px;
+    left: 70px;
     position: relative;
     text-align: center;
     width: 520px;
