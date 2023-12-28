@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
 import HomeContent from "./components/HomeContent";
 import FoodContent from "./components/FoodContent";
 import AdminLogin from "./components/AdminLogin";
@@ -11,6 +10,8 @@ import { AdminEditFood } from "./components/AdminEditFood";
 import WhatToEat from "./components/WhatToEat";
 import { useState } from "react";
 import TrainingPage from "./components/TrainingPage";
+import MythPage from "./components/MythPage";
+import PropTypes, { string } from "prop-types";
 
 type FoodProps = {
   foodId: string;
@@ -19,6 +20,13 @@ type FoodProps = {
   carbs: number;
   protein: number;
   fat: number;
+};
+
+type MythProps = {
+  mythId: string;
+  mythDesc: string;
+  factDesc: string;
+  source: string;
 };
 
 interface FoodState {
@@ -43,6 +51,7 @@ function App() {
       activity: "",
     },
   ]);
+
   return (
     <BrowserRouter>
       <Routes>
@@ -62,7 +71,17 @@ function App() {
           }
         ></Route>
         <Route path="/training" element={<TrainingPage></TrainingPage>} />
-        <Route path="/myths" element={<HomeContent />} />
+        <Route
+          path="/myths"
+          element={
+            <MythPage
+              mythId="1"
+              mythDesc="You need to exercise for hours each day to stay in shape"
+              factDesc="You can achieve significant health benefits from just 30 minutes of exercise per day"
+              source="google.com"
+            ></MythPage>
+          }
+        />
         <Route path="/adminLogin" element={<AdminLogin />} />
         <Route path="/adminHome" element={<AdminHome />}></Route>
         <Route path="/adminFoodList" element={<FoodListTable />}></Route>
@@ -76,5 +95,12 @@ function App() {
     </BrowserRouter>
   );
 }
+
+App.propTypes = {
+  mythId: string,
+  mythDesc: string,
+  factDesc: string,
+  source: string,
+};
 
 export default App;

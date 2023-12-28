@@ -62,20 +62,16 @@ class FoodContent extends Component {
                     id="age"
                     placeholder="Enter your age"
                   />
-                  <div className="subtitle">in years</div>
+                  <div className="subtitle-calculator">in years</div>
                 </div>
 
                 <div className="div-form">
                   <label className="title-4">Gender</label>
-                  <select
-                    className="textfield"
-                    defaultValue=""
-                    placeholder="Choose.."
-                  >
+                  <select className="textfield" defaultValue="">
                     <option value="female">Female</option>
                     <option value="male">Male</option>
                   </select>
-                  <div className="subtitle">Select your gender</div>
+                  <div className="subtitle-calculator">Select your gender</div>
                 </div>
 
                 <div className="div-form">
@@ -86,7 +82,7 @@ class FoodContent extends Component {
                     id="height"
                     placeholder="Enter your height"
                   />
-                  <div className="subtitle">in centimeters</div>
+                  <div className="subtitle-calculator">in centimeters</div>
                 </div>
 
                 <div className="div-form">
@@ -97,7 +93,7 @@ class FoodContent extends Component {
                     id="weight"
                     placeholder="Enter your weight"
                   />
-                  <div className="subtitle">in kilograms</div>
+                  <div className="subtitle-calculator">in kilograms</div>
                 </div>
 
                 <div className="div-form">

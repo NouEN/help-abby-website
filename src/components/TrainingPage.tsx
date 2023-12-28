@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../style.css";
 import Navbar from "./Navbar";
+import { Link } from "react-router-dom";
 
 class TrainingPage extends Component {
   render() {
@@ -442,6 +443,23 @@ class TrainingPage extends Component {
             </div>
           </div>
         </div>
+
+        <div className="section">
+          <div className="container">
+            <div className="div">
+              <div className="button-eat-container">
+                <Link to="/myths">
+                  <button className="button btn-eat">
+                    <div className="secondary">
+                      <div className="title-3">Go to Myths➡️ </div>
+                    </div>
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="section">
           <div className="container">
             <div className="container-wrapper">
