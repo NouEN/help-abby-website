@@ -12,6 +12,9 @@ import { useState } from "react";
 import TrainingPage from "./components/TrainingPage";
 import MythPage from "./components/MythPage";
 import PropTypes, { string } from "prop-types";
+import HelloWorld from "./components/HellowWorld";
+import axios from "axios";
+import NutritionalValuePage from "./components/NutritionalValuePage";
 
 type FoodProps = {
   foodId: string;
@@ -41,6 +44,7 @@ interface FoodState {
 // TODO : INSERT PROPS AND STATE WHEN TAKING FROM DB
 
 function App() {
+  axios.defaults.baseURL = "http://127.0.0.1:8000";
   const [measurement, setMeasurements] = useState([
     {
       submitted: "false",
@@ -91,6 +95,10 @@ function App() {
           element={<AdminRegisterFood />}
         ></Route>
         <Route path="/adminEditFood" element={<AdminEditFood />}></Route>
+        <Route
+          path="/foodlist"
+          element={<NutritionalValuePage></NutritionalValuePage>}
+        ></Route>
       </Routes>
     </BrowserRouter>
   );
