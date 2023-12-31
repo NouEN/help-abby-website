@@ -12,7 +12,6 @@ import { useState } from "react";
 import TrainingPage from "./components/TrainingPage";
 import MythPage from "./components/MythPage";
 import PropTypes, { string } from "prop-types";
-import HelloWorld from "./components/HellowWorld";
 import axios from "axios";
 import NutritionalValuePage from "./components/NutritionalValuePage";
 
@@ -96,7 +95,7 @@ function App() {
         ></Route>
         <Route path="/adminEditFood" element={<AdminEditFood />}></Route>
         <Route
-          path="/foodlist"
+          path="/food/foodlist"
           element={<NutritionalValuePage></NutritionalValuePage>}
         ></Route>
       </Routes>

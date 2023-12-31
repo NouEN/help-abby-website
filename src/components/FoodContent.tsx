@@ -298,7 +298,7 @@ class FoodContent extends Component {
                 Curious to find out more about food nutritional value?
               </p>
               <div className="button-eat-container">
-                <Link to="/foodlist">
+                <Link to="/food/foodlist">
                   <button className="button btn-eat">
                     <div className="primary">
                       <div className="title-2">List of Nutritional Value</div>
