@@ -30,7 +30,7 @@ function NutritionalValuePage() {
   return (
     <div className="main-section">
       <h1>All Books</h1>
-      <div className="book-list">
+      <div className="list">
         {foodList.map((food: Food, index) => (
           <ul>
             <li>Food Name: {food.foodName}</li>

@@ -74,17 +74,7 @@ function App() {
           }
         ></Route>
         <Route path="/training" element={<TrainingPage></TrainingPage>} />
-        <Route
-          path="/myths"
-          element={
-            <MythPage
-              mythId="1"
-              mythDesc="You need to exercise for hours each day to stay in shape"
-              factDesc="You can achieve significant health benefits from just 30 minutes of exercise per day"
-              source="google.com"
-            ></MythPage>
-          }
-        />
+        <Route path="/myths" element={<MythPage></MythPage>} />
         <Route path="/adminLogin" element={<AdminLogin />} />
         <Route path="/adminHome" element={<AdminHome />}></Route>
         <Route path="/adminFoodList" element={<FoodListTable />}></Route>
