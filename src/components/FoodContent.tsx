@@ -88,10 +88,11 @@ function FoodContent() {
               </div>
 
               <div className="div-form">
-                <label className="title-4">Gender</label>
+                <label className="title-4 form-label">Gender</label>
                 <select
                   className="textfield"
                   defaultValue=""
+                  required
                   onChange={(e) => setGender(e.target.value)}
                 >
                   <option value="gender" selected>
