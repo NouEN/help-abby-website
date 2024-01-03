@@ -5,46 +5,42 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-interface FoodState {
-  submitted: boolean;
-  age: number;
-  gender: string;
-  weight: number;
-  height: number;
-  activity: string;
+interface CalorieState {
+  tdee: number;
+  bmr: number;
 }
 
 function FoodContent() {
-  const [submitted, setSubmitted] = useState(false);
   const [age, setAge] = useState(0);
   const [weight, setWeight] = useState(0);
   const [height, setHeight] = useState(0);
   const [gender, setGender] = useState("");
   const [activityLevel, setActivityLevel] = useState("");
+  const [result, setResult] = useState([{ bmr: 0, tdee: 0 }]);
+  const [bmr, setBmr] = useState(0);
+  const [tdee, setTdee] = useState(0);
 
-  useEffect(() => {
-    sendData();
-  }, []);
-
-  const apiURL = "http://127.0.0.1:8000/food/submit";
-
-  const sendData = async () => {
-    const response = await axios.post(apiURL);
-    console.log(response);
-    console.log(response.data);
-  };
-
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const data = { age, gender, weight, height, activityLevel };
-    axios
-      .post("http://127.0.0.1:8000/food/submit", data)
-      .then(function (response) {
-        console.log(response);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
+
+    const response = await axios.post(
+      "http://127.0.0.1:8000/food/submit",
+      data
+    );
+    console.log(response);
+    setResult(response.data);
+    if (response.data.status == "SUCCESS") {
+      setBmr(response.data.bmr);
+      setTdee(response.data.tdee);
+    } else {
+      alert("Wrong input! Input Abby's measurement details.");
+    }
+  };
+
+  const handleReset = async () => {
+    setBmr(0);
+    setTdee(0);
   };
 
   return (
@@ -74,7 +70,7 @@ function FoodContent() {
 
           <div className="calculator">
             <form method="post" onSubmit={handleSubmit}>
-              <div className="title">Enter Your Information</div>
+              <div className="title">Calorie Calculator</div>
               <div className="div-form">
                 <label className="title-4">Age</label>
                 <input
@@ -82,6 +78,7 @@ function FoodContent() {
                   className="textfield"
                   id="age"
                   placeholder="Enter your age"
+                  required
                   onChange={(e) => setAge(Number(e.target.value))}
                 />
                 <div className="subtitle-calculator">in years</div>
@@ -111,6 +108,7 @@ function FoodContent() {
                   className="textfield"
                   id="height"
                   placeholder="Enter your height"
+                  required
                   onChange={(e) => setHeight(Number(e.target.value))}
                 />
                 <div className="subtitle-calculator">in centimeters</div>
@@ -123,6 +121,7 @@ function FoodContent() {
                   className="textfield"
                   id="weight"
                   placeholder="Enter your weight"
+                  required
                   onChange={(e) => setWeight(Number(e.target.value))}
                 />
                 <div className="subtitle-calculator">in kilograms</div>
@@ -172,7 +171,11 @@ function FoodContent() {
               </div>
 
               <div className="div-form">
-                <button type="reset" className="button btn-form">
+                <button
+                  type="reset"
+                  className="button btn-form"
+                  onClick={handleReset}
+                >
                   <div className="secondary">
                     <div className="title-12">Reset</div>
                   </div>
@@ -189,12 +192,14 @@ function FoodContent() {
           <div className="list-calorie">
             <div className="metric">
               <div className="title-13">Basal Metabolic Rate</div>
-              <div className="data">1300</div>
+              <div className="data" id="data">
+                {bmr}
+              </div>
             </div>
 
             <div className="metric">
               <div className="title-13">Total Daily Energy Expenditure</div>
-              <div className="data">2000</div>
+              <div className="data">{tdee}</div>
             </div>
           </div>
 
