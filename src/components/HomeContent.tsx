@@ -13,7 +13,11 @@ class HomeContent extends Component {
           <div className="container">
             <div className="subtitle">
               Are you an admin?
-              <Link to="/adminLogin" className="subtitle">
+              <Link
+                to="http://127.0.0.1:8000/admin/login"
+                target="__blank"
+                className="subtitle"
+              >
                 Click here
               </Link>
             </div>

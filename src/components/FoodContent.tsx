@@ -174,7 +174,7 @@ function FoodContent() {
                 <button
                   type="reset"
                   className="button btn-form"
-                  onClick={handleReset}
+                  onClick={() => handleReset}
                 >
                   <div className="secondary">
                     <div className="title-12">Reset</div>
@@ -348,7 +348,7 @@ function FoodContent() {
             </p>
             <div className="button-eat-container">
               <Link to="/food/foodlist">
-                <button className="button btn-eat">
+                <button className="btn-eat">
                   <div className="primary">
                     <div className="title-2">List of Nutritional Value</div>
                   </div>
