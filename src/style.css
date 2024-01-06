@@ -89,8 +89,21 @@
     padding: 60px 170px;
     position: relative;
     width: 100%;
+    
   }
 
+  /*EDIT THISS*/
+  .paginate {
+    align-items: center;
+    border-radius: 6px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px;
+    position: relative;
+
+  }
   .section .metric{
     align-items: flex-start;
     border: 1px solid;
@@ -511,6 +524,7 @@
     justify-content: center;
     padding: 16px;
     position: relative;
+    background-color: coral;
   }
   
   .page .div-wrapper {
@@ -546,6 +560,7 @@
     flex-grow: 1;
     gap: 8px;
     position: relative;
+    
   }
   
   .page .title-3 {
