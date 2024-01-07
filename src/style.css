@@ -92,7 +92,7 @@
     
   }
 
-  /*EDIT THISS*/
+  /*EDIT THIS*/
   .paginate {
     align-items: center;
     border-radius: 6px;
@@ -433,6 +433,7 @@
     height: 100px;
     width: 100px;
     position: relative;
+    background-color: brown;
   }
   
   

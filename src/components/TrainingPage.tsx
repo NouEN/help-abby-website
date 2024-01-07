@@ -45,7 +45,10 @@ class TrainingPage extends Component {
             <div className="row">
               <div className="article">
                 <div className="image-wrapper-cardio">
-                  <div className="image-cardio"></div>
+                  <img
+                    className="image-cardio"
+                    src="src\assets\images\running.gif"
+                  ></img>
                 </div>
 
                 <div className="frame">
@@ -70,7 +73,10 @@ class TrainingPage extends Component {
             <div className="row">
               <div className="article">
                 <div className="image-wrapper-cardio">
-                  <div className="image-cardio"></div>
+                  <img
+                    className="image-cardio"
+                    src="src\assets\images\cycling.gif"
+                  ></img>
                 </div>
                 <div className="frame">
                   <div className="title-3">Cycling</div>
@@ -95,7 +101,10 @@ class TrainingPage extends Component {
             <div className="row">
               <div className="article">
                 <div className="image-wrapper-cardio">
-                  <div className="image-cardio"></div>
+                  <img
+                    className="image-cardio"
+                    src="src\assets\images\swimming-2.gif"
+                  ></img>
                 </div>
                 <div className="frame">
                   <div className="title-3">Swimming</div>
@@ -126,7 +135,10 @@ class TrainingPage extends Component {
               <div className="row">
                 <div className="article">
                   <div className="image-container-benefit">
-                    <div className="image"></div>
+                    <img
+                      className="image-cardio"
+                      src="src\assets\images\blood-pressure.gif"
+                    ></img>
                   </div>
                   <div className="frame">
                     <div className="text-wrapper-benefit-title">
@@ -140,7 +152,10 @@ class TrainingPage extends Component {
                 </div>
                 <div className="article">
                   <div className="image-container-benefit">
-                    <div className="image"></div>
+                    <img
+                      className="image-cardio"
+                      src="src\assets\images\heartbeat.gif"
+                    ></img>
                   </div>
                   <div className="frame">
                     <div className="text-wrapper-benefit-title">
@@ -156,7 +171,10 @@ class TrainingPage extends Component {
               <div className="row">
                 <div className="article">
                   <div className="image-container-benefit">
-                    <div className="image"></div>
+                    <img
+                      className="image-cardio"
+                      src="src\assets\images\fire.gif"
+                    ></img>
                   </div>
                   <div className="frame">
                     <div className="text-wrapper-benefit-title">
@@ -170,7 +188,10 @@ class TrainingPage extends Component {
                 </div>
                 <div className="article">
                   <div className="image-container-benefit">
-                    <div className="image"></div>
+                    <img
+                      className="image-cardio"
+                      src="src\assets\images\laughing.gif"
+                    ></img>
                   </div>
                   <div className="frame">
                     <div className="text-wrapper-benefit-title">
@@ -217,7 +238,10 @@ class TrainingPage extends Component {
             <div className="row">
               <div className="article">
                 <div className="image-wrapper-cardio">
-                  <div className="image-cardio"></div>
+                  <img
+                    className="image-cardio"
+                    src="src\assets\images\squat.gif"
+                  ></img>
                 </div>
 
                 <div className="frame">
@@ -242,7 +266,10 @@ class TrainingPage extends Component {
             <div className="row">
               <div className="article">
                 <div className="image-wrapper-cardio">
-                  <div className="image-cardio"></div>
+                  <img
+                    className="image-cardio"
+                    src="src\assets\images\pushups.gif"
+                  ></img>
                 </div>
                 <div className="frame">
                   <div className="title-3">Push-ups</div>
@@ -269,7 +296,10 @@ class TrainingPage extends Component {
             <div className="row">
               <div className="article">
                 <div className="image-wrapper-cardio">
-                  <div className="image-cardio"></div>
+                  <img
+                    className="image-cardio"
+                    src="src\assets\images\plank.svg"
+                  ></img>
                 </div>
                 <div className="frame">
                   <div className="title-3">Planks</div>
@@ -301,7 +331,10 @@ class TrainingPage extends Component {
               <div className="row">
                 <div className="article">
                   <div className="image-container-benefit">
-                    <div className="image"></div>
+                    <img
+                      className="image-cardio"
+                      src="src\assets\images\muscle.gif"
+                    ></img>
                   </div>
                   <div className="frame">
                     <div className="text-wrapper-benefit-title">
@@ -315,7 +348,10 @@ class TrainingPage extends Component {
                 </div>
                 <div className="article">
                   <div className="image-container-benefit">
-                    <div className="image"></div>
+                    <img
+                      className="image-cardio"
+                      src="src\assets\images\skull.gif"
+                    ></img>
                   </div>
                   <div className="frame">
                     <div className="text-wrapper-benefit-title">
@@ -359,7 +395,10 @@ class TrainingPage extends Component {
             <div className="row">
               <div className="article">
                 <div className="image-wrapper-cardio">
-                  <div className="image-cardio"></div>
+                  <img
+                    className="image-cardio"
+                    src="src\assets\images\stretching.gif"
+                  ></img>
                 </div>
 
                 <div className="frame">
@@ -383,7 +422,10 @@ class TrainingPage extends Component {
             <div className="row">
               <div className="article">
                 <div className="image-wrapper-cardio">
-                  <div className="image-cardio"></div>
+                  <img
+                    className="image-cardio"
+                    src="src\assets\images\yoga.gif"
+                  ></img>
                 </div>
                 <div className="frame">
                   <div className="title-3">Yoga</div>
@@ -414,7 +456,10 @@ class TrainingPage extends Component {
               <div className="row">
                 <div className="article">
                   <div className="image-container-benefit">
-                    <div className="image"></div>
+                    <img
+                      className="image-cardio"
+                      src="src\assets\images\rom.gif"
+                    ></img>
                   </div>
                   <div className="frame">
                     <div className="text-wrapper-benefit-title">
@@ -427,7 +472,10 @@ class TrainingPage extends Component {
                 </div>
                 <div className="article">
                   <div className="image-container-benefit">
-                    <div className="image"></div>
+                    <img
+                      className="image-cardio"
+                      src="src\assets\images\dance.gif"
+                    ></img>
                   </div>
                   <div className="frame">
                     <div className="text-wrapper-benefit-title">

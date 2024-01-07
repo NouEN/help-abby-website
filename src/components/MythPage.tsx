@@ -45,12 +45,11 @@ function MythPage() {
                 <li>{myth.id}</li>
                 <li>Myth Name: {myth.mythDesc}</li>
                 <li>Calories: {myth.factDesc}</li>
+                <li>{myth.source}</li>
               </ul>
             ))}
-            {mythList.map((myth: Myth, index) => (
-              <p>{myth.source}</p>
-            ))}
           </div>
+          <div className="">More myths to be debunked coming soon!</div>
         </div>
       </div>
     </div>

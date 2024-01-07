@@ -268,7 +268,10 @@ function FoodContent() {
             <div className="row">
               <div className="article">
                 <div className="image-container">
-                  <div className="image"></div>
+                  <img
+                    className="image-cardio"
+                    src="src\assets\images\egg.png"
+                  ></img>
                 </div>
                 <div className="frame">
                   <div className="title-3">Protein</div>
