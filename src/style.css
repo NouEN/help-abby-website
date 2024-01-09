@@ -635,7 +635,7 @@
   .page .avatar {
     align-items: center;
     display: flex;
-    flex: 1;
+    flex: 2;
     flex-grow: 1;
     gap: 8px;
     position: relative;
@@ -644,9 +644,9 @@
   .page .avatar-2 {
     background-color: #0000001a;
     border-radius: 20px;
-    height: 20px;
+    height: 30px;
     position: relative;
-    width: 20px;
+    width: 30px;
   }
   
   .page .title-wrapper {

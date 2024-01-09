@@ -35,13 +35,12 @@ class HomeContent extends Component {
             </Link>
           </div>
           <div className="image-container">
-            <div className="image" />
+            <img src="src\assets\images\kid-tree.png" />
           </div>
-          <img className="vector" alt="Vector" src="vector-200.svg" />
         </div>
         <div className="section">
           <div className="image-wrapper">
-            <div className="image" />
+            <img src="src\assets\images\abby-intro.png" className="image" />
           </div>
           <div className="container">
             <div className="text-wrapper">Meet Abby</div>
@@ -54,7 +53,10 @@ class HomeContent extends Component {
               <div className="row">
                 <div className="article">
                   <div className="div-wrapper">
-                    <div className="image-2" />
+                    <img
+                      src="src\assets\images\pizza.png"
+                      className="image-2"
+                    />
                   </div>
                   <div className="frame">
                     <div className="title-3">Abby&#39;s Favorite Foods</div>
@@ -76,12 +78,32 @@ class HomeContent extends Component {
                       </div>
                     </div>
                   </div>
+                  <p className="subtitle-calculator">
+                    <a
+                      href="https://iconscout.com/3d-illustrations/pizza"
+                      className="text-underline font-size-sm"
+                      target="_blank"
+                    >
+                      Pizza
+                    </a>{" "}
+                    by{" "}
+                    <a
+                      href="https://iconscout.com/contributors/morpvin"
+                      className="text-underline font-size-sm"
+                      target="_blank"
+                    >
+                      Voxnoru
+                    </a>
+                  </p>
                 </div>
               </div>
               <div className="row">
                 <div className="article">
                   <div className="div-wrapper">
-                    <div className="image-2" />
+                    <img
+                      src="src\assets\images\scared-mind.png"
+                      className="image-2"
+                    />
                   </div>
                   <div className="frame">
                     <div className="title-3">Reality Check</div>
@@ -92,19 +114,53 @@ class HomeContent extends Component {
                     </p>
                     <div className="user">
                       <div className="avatar">
-                        <div className="avatar-2" />
+                        <img
+                          src="src\assets\images\med-doc.png"
+                          className="avatar-2"
+                        />
                         <div className="title-wrapper">
                           <div className="title-4">School Doctor</div>
+                          <p>
+                            Illustration by{" "}
+                            <a href="https://icons8.com/illustrations/author/lZpGtGw5182N">
+                              Elisabet Guba
+                            </a>{" "}
+                            from{" "}
+                            <a href="https://icons8.com/illustrations">Ouch!</a>
+                          </p>
                         </div>
                       </div>
                     </div>
                   </div>
+                  <p className="subtitle-calculator">
+                    <a
+                      href="https://iconscout.com/3d-illustrations/scared-mind"
+                      className="text-underline font-size-sm"
+                      target="_blank"
+                    >
+                      Scared Mind
+                    </a>{" "}
+                    by{" "}
+                    <a
+                      href="https://iconscout.com/contributors/flowicon"
+                      className="text-underline font-size-sm"
+                    >
+                      Flowicon
+                    </a>{" "}
+                    on{" "}
+                    <a
+                      href="https://iconscout.com"
+                      className="text-underline font-size-sm"
+                    >
+                      IconScout
+                    </a>
+                  </p>
                 </div>
               </div>
               <div className="row">
                 <div className="article">
                   <div className="div-wrapper">
-                    <div className="image-2" />
+                    <img src="src\assets\images\note.png" className="image-2" />
                   </div>
                   <div className="frame">
                     <div className="title-3">Physical Challenges</div>
@@ -128,12 +184,35 @@ class HomeContent extends Component {
                       </div>
                     </div>
                   </div>
+                  <p className="subtitle-calculator">
+                    <a
+                      href="https://iconscout.com/3d-illustrations/notes"
+                      className="text-underline font-size-sm"
+                      target="_blank"
+                    >
+                      Notes
+                    </a>{" "}
+                    by{" "}
+                    <a
+                      href="https://iconscout.com/contributors/ncrte3d"
+                      className="text-underline font-size-sm"
+                    >
+                      Naufal Imaanullah
+                    </a>{" "}
+                    on{" "}
+                    <a
+                      href="https://iconscout.com"
+                      className="text-underline font-size-sm"
+                    >
+                      IconScout
+                    </a>
+                  </p>
                 </div>
               </div>
               <div className="row">
                 <div className="article">
                   <div className="div-wrapper">
-                    <div className="image-2" />
+                    <img src="src\assets\images\sad.png" className="image-2" />
                   </div>
                   <div className="frame">
                     <div className="title-3">Feeling Sad</div>
@@ -156,12 +235,35 @@ class HomeContent extends Component {
                       </div>
                     </div>
                   </div>
+                  <p className="subtitle-calculator">
+                    <a
+                      href="https://iconscout.com/3d-illustrations/emoji"
+                      className="text-underline font-size-sm"
+                      target="_blank"
+                    >
+                      Emoji
+                    </a>{" "}
+                    by{" "}
+                    <a
+                      href="https://iconscout.com/contributors/zusma-gotama"
+                      className="text-underline font-size-sm"
+                    >
+                      ZuGo Studio
+                    </a>{" "}
+                    on{" "}
+                    <a
+                      href="https://iconscout.com"
+                      className="text-underline font-size-sm"
+                    >
+                      IconScout
+                    </a>
+                  </p>
                 </div>
               </div>
               <div className="row">
                 <div className="article">
                   <div className="div-wrapper">
-                    <div className="image-2" />
+                    <img src="src\assets\images\fist.png" className="image-2" />
                   </div>
                   <div className="frame">
                     <div className="title-3">Getting Motivated</div>
@@ -179,6 +281,29 @@ class HomeContent extends Component {
                       </div>
                     </div>
                   </div>
+                  <p className="subtitle-calculator">
+                    <a
+                      href="https://iconscout.com/3d-illustrations/solidarity-fist"
+                      className="text-underline font-size-sm"
+                      target="_blank"
+                    >
+                      Solidarity Fist
+                    </a>{" "}
+                    by{" "}
+                    <a
+                      href="https://iconscout.com/contributors/welsonhendra"
+                      className="text-underline font-size-sm"
+                    >
+                      Welson Hendra
+                    </a>{" "}
+                    on{" "}
+                    <a
+                      href="https://iconscout.com"
+                      className="text-underline font-size-sm"
+                    >
+                      IconScout
+                    </a>
+                  </p>
                 </div>
               </div>
             </div>
