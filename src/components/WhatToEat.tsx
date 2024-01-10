@@ -24,7 +24,7 @@ function WhatToEat(props: FoodProps) {
           </div>
           <div className="title-page">Weight Loss Meal Plan</div>
           <p className="title-13">
-            Here is an example of a weight loss meal plan for 1500 calories for
+            Here is an example of a weight loss meal plan for 1700 calories for
             Abby.
           </p>
         </div>

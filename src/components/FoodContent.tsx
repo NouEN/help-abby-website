@@ -16,9 +16,9 @@ function FoodContent() {
   const [height, setHeight] = useState(0);
   const [gender, setGender] = useState("");
   const [activityLevel, setActivityLevel] = useState("");
-  const [result, setResult] = useState([{ bmr: 0, tdee: 0 }]);
   const [bmr, setBmr] = useState(0);
   const [tdee, setTdee] = useState(0);
+  const [calculated, setCalculated] = useState(false);
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -29,10 +29,11 @@ function FoodContent() {
       data
     );
     console.log(response);
-    setResult(response.data);
     if (response.data.status == "SUCCESS") {
       setBmr(response.data.bmr);
       setTdee(response.data.tdee);
+      setCalculated(true);
+      console.log("caluclated is {}", calculated);
     } else {
       alert("Wrong input! Input Abby's measurement details.");
     }
@@ -41,6 +42,15 @@ function FoodContent() {
   const handleReset = async () => {
     setBmr(0);
     setTdee(0);
+    window.location.reload();
+  };
+
+  const checkCalculated = async () => {
+    if (calculated == true) {
+      return "/whattoeat";
+    } else {
+      return "/food";
+    }
   };
 
   return (
@@ -174,7 +184,7 @@ function FoodContent() {
                 <button
                   type="reset"
                   className="button btn-form"
-                  onClick={() => handleReset}
+                  onClick={() => handleReset()}
                 >
                   <div className="secondary">
                     <div className="title-12">Reset</div>
@@ -211,8 +221,12 @@ function FoodContent() {
               out what Abby can eat in that range of calories.
             </div>
             <div className="button-eat-container">
+              const now = checkCalculated();
               <Link to="/whattoeat">
-                <button className="button btn-eat">
+                <button
+                  className="button btn-eat"
+                  disabled={calculated == true ? true : false}
+                >
                   <div className="primary">
                     <div className="title-2">What To Eat</div>
                   </div>
