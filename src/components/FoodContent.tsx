@@ -234,7 +234,10 @@ function FoodContent() {
             <div className="row">
               <div className="article">
                 <div className="image-container">
-                  <div className="image"></div>
+                  <img
+                    className="image-cardio"
+                    src="src\assets\images\bread.png"
+                  ></img>
                 </div>
                 <div className="frame">
                   <div className="title-3">Carbohydrates</div>
@@ -255,7 +258,10 @@ function FoodContent() {
 
                   <div className="user">
                     <div className="avatar">
-                      <div className="avatar-2"></div>
+                      <img
+                        className="ava-2"
+                        src="src\assets\images\doctor.png"
+                      ></img>
                       <div className="title-wrapper">
                         <div className="title-5">Dr.Nutrition</div>
                       </div>
@@ -270,7 +276,7 @@ function FoodContent() {
                 <div className="image-container">
                   <img
                     className="image-cardio"
-                    src="src\assets\images\egg.png"
+                    src="src\assets\images\turkey.png"
                   ></img>
                 </div>
                 <div className="frame">
@@ -294,7 +300,10 @@ function FoodContent() {
 
                   <div className="user">
                     <div className="avatar">
-                      <div className="avatar-2"></div>
+                      <img
+                        className="ava-2"
+                        src="src\assets\images\doctor.png"
+                      ></img>
                       <div className="title-wrapper">
                         <div className="title-5">Dr.Nutrition</div>
                       </div>
@@ -307,7 +316,10 @@ function FoodContent() {
             <div className="row">
               <div className="article">
                 <div className="image-container">
-                  <div className="image"></div>
+                  <img
+                    className="image-cardio"
+                    src="src\assets\images\cheese.png"
+                  ></img>
                 </div>
                 <div className="frame">
                   <div className="title-3">Fats</div>
@@ -330,7 +342,10 @@ function FoodContent() {
 
                   <div className="user">
                     <div className="avatar">
-                      <div className="avatar-2"></div>
+                      <img
+                        className="ava-2"
+                        src="src\assets\images\doctor.png"
+                      ></img>
                       <div className="title-wrapper">
                         <div className="title-5">Dr.Nutrition</div>
                       </div>

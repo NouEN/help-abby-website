@@ -40,7 +40,7 @@ class HomeContent extends Component {
         </div>
         <div className="section">
           <div className="image-wrapper">
-            <img src="src\assets\images\abby-intro.png" className="image" />
+            <img src="src\assets\images\abby-hello.gif" className="image" />
           </div>
           <div className="container">
             <div className="text-wrapper">Meet Abby</div>
@@ -71,7 +71,10 @@ class HomeContent extends Component {
                     </div>
                     <div className="user">
                       <div className="avatar">
-                        <div className="avatar-2" />
+                        <img
+                          src="src\assets\images\abby-logo.png"
+                          className="ava-2"
+                        />
                         <div className="title-wrapper">
                           <div className="title-4">Abby</div>
                         </div>
@@ -81,7 +84,7 @@ class HomeContent extends Component {
                   <p className="subtitle-calculator">
                     <a
                       href="https://iconscout.com/3d-illustrations/pizza"
-                      className="text-underline font-size-sm"
+                      className="ref-link"
                       target="_blank"
                     >
                       Pizza
@@ -89,7 +92,7 @@ class HomeContent extends Component {
                     by{" "}
                     <a
                       href="https://iconscout.com/contributors/morpvin"
-                      className="text-underline font-size-sm"
+                      className="ref-link"
                       target="_blank"
                     >
                       Voxnoru
@@ -112,22 +115,22 @@ class HomeContent extends Component {
                       she is considered overweight by her doctor. It&#39;s time
                       for a change!
                     </p>
+                    <div className="selection">
+                      <div className="label-normal">
+                        <div className="label-text">Overweight</div>
+                      </div>
+                      <div className="label-normal">
+                        <div className="label-text">Health Concern</div>
+                      </div>
+                    </div>
                     <div className="user">
                       <div className="avatar">
                         <img
-                          src="src\assets\images\med-doc.png"
-                          className="avatar-2"
+                          src="src\assets\images\doctor-1.png"
+                          className="ava-2"
                         />
                         <div className="title-wrapper">
                           <div className="title-4">School Doctor</div>
-                          <p>
-                            Illustration by{" "}
-                            <a href="https://icons8.com/illustrations/author/lZpGtGw5182N">
-                              Elisabet Guba
-                            </a>{" "}
-                            from{" "}
-                            <a href="https://icons8.com/illustrations">Ouch!</a>
-                          </p>
                         </div>
                       </div>
                     </div>
@@ -135,7 +138,7 @@ class HomeContent extends Component {
                   <p className="subtitle-calculator">
                     <a
                       href="https://iconscout.com/3d-illustrations/scared-mind"
-                      className="text-underline font-size-sm"
+                      className="ref-link"
                       target="_blank"
                     >
                       Scared Mind
@@ -143,15 +146,12 @@ class HomeContent extends Component {
                     by{" "}
                     <a
                       href="https://iconscout.com/contributors/flowicon"
-                      className="text-underline font-size-sm"
+                      className="ref-link"
                     >
                       Flowicon
                     </a>{" "}
                     on{" "}
-                    <a
-                      href="https://iconscout.com"
-                      className="text-underline font-size-sm"
-                    >
+                    <a href="https://iconscout.com" className="ref-link">
                       IconScout
                     </a>
                   </p>
@@ -177,7 +177,10 @@ class HomeContent extends Component {
                     </div>
                     <div className="user">
                       <div className="avatar">
-                        <div className="avatar-2" />
+                        <img
+                          src="src\assets\images\pe-teach.png"
+                          className="ava-2"
+                        />
                         <div className="title-wrapper">
                           <div className="title-4">PE Teacher</div>
                         </div>
@@ -187,7 +190,7 @@ class HomeContent extends Component {
                   <p className="subtitle-calculator">
                     <a
                       href="https://iconscout.com/3d-illustrations/notes"
-                      className="text-underline font-size-sm"
+                      className="ref-link"
                       target="_blank"
                     >
                       Notes
@@ -195,15 +198,12 @@ class HomeContent extends Component {
                     by{" "}
                     <a
                       href="https://iconscout.com/contributors/ncrte3d"
-                      className="text-underline font-size-sm"
+                      className="ref-link"
                     >
                       Naufal Imaanullah
                     </a>{" "}
                     on{" "}
-                    <a
-                      href="https://iconscout.com"
-                      className="text-underline font-size-sm"
-                    >
+                    <a href="https://iconscout.com" className="ref-link">
                       IconScout
                     </a>
                   </p>
@@ -228,7 +228,10 @@ class HomeContent extends Component {
                     </div>
                     <div className="user">
                       <div className="avatar">
-                        <div className="avatar-2" />
+                        <img
+                          src="src\assets\images\abby-logo.png"
+                          className="ava-2"
+                        />
                         <div className="title-wrapper">
                           <div className="title-4">Abby</div>
                         </div>
@@ -238,7 +241,7 @@ class HomeContent extends Component {
                   <p className="subtitle-calculator">
                     <a
                       href="https://iconscout.com/3d-illustrations/emoji"
-                      className="text-underline font-size-sm"
+                      className="ref-link"
                       target="_blank"
                     >
                       Emoji
@@ -246,15 +249,12 @@ class HomeContent extends Component {
                     by{" "}
                     <a
                       href="https://iconscout.com/contributors/zusma-gotama"
-                      className="text-underline font-size-sm"
+                      className="ref-link"
                     >
                       ZuGo Studio
                     </a>{" "}
                     on{" "}
-                    <a
-                      href="https://iconscout.com"
-                      className="text-underline font-size-sm"
-                    >
+                    <a href="https://iconscout.com" className="ref-link">
                       IconScout
                     </a>
                   </p>
@@ -272,9 +272,17 @@ class HomeContent extends Component {
                       towards a healthier lifestyle. Are you willing to help
                       Abby too?
                     </p>
+                    <div className="selection">
+                      <div className="label-normal">
+                        <div className="label-text">Motivation</div>
+                      </div>
+                    </div>
                     <div className="user">
                       <div className="avatar">
-                        <div className="avatar-2" />
+                        <img
+                          src="src\assets\images\abby-logo.png"
+                          className="ava-2"
+                        />
                         <div className="title-wrapper">
                           <div className="title-4">Abby</div>
                         </div>
@@ -284,7 +292,7 @@ class HomeContent extends Component {
                   <p className="subtitle-calculator">
                     <a
                       href="https://iconscout.com/3d-illustrations/solidarity-fist"
-                      className="text-underline font-size-sm"
+                      className="ref-link"
                       target="_blank"
                     >
                       Solidarity Fist
@@ -292,15 +300,12 @@ class HomeContent extends Component {
                     by{" "}
                     <a
                       href="https://iconscout.com/contributors/welsonhendra"
-                      className="text-underline font-size-sm"
+                      className="ref-link"
                     >
                       Welson Hendra
                     </a>{" "}
                     on{" "}
-                    <a
-                      href="https://iconscout.com"
-                      className="text-underline font-size-sm"
-                    >
+                    <a href="https://iconscout.com" className="ref-link">
                       IconScout
                     </a>
                   </p>
@@ -310,10 +315,11 @@ class HomeContent extends Component {
           </div>
           <img className="img" alt="Vector" src="image.svg" />
         </div>
-
-        <div className="container-wrapper">
-          <div className="container-3">
-            <p className="title-1">HelpAbby © 2024. All rights reserved.</p>
+        <div className="section">
+          <div className="container-wrapper">
+            <div className="container-3">
+              <p className="title-1">HelpAbby © 2024. All rights reserved.</p>
+            </div>
           </div>
         </div>
       </div>
