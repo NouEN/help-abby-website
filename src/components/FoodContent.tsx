@@ -221,7 +221,6 @@ function FoodContent() {
               out what Abby can eat in that range of calories.
             </div>
             <div className="button-eat-container">
-              const now = checkCalculated();
               <Link to="/whattoeat">
                 <button
                   className="button btn-eat"

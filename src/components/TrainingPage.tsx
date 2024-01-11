@@ -30,10 +30,14 @@ class TrainingPage extends Component {
               also be considered a full body exercise.
             </p>
 
-            <div className="image-container">
-              <div className="image"></div>
-            </div>
-            <img className="vector" alt="vector" src="vector-200.png" />
+            <hr
+              style={{
+                borderBottom: "1px solid #888",
+                width: "100px",
+                color: "black",
+                height: "5px",
+              }}
+            />
           </div>
         </div>
 

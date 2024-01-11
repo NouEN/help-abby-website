@@ -252,11 +252,12 @@
     height: 245px;
     width: 100%;
     position: relative;
+    background-color: #ffffff;
   }
   
    .page .image {
     align-self: stretch;
-    background-color: #d8d8d880;
+    background-color: #ffffff;
     flex: 1;
     flex-grow: 1;
     position: relative;

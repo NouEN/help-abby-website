@@ -38,8 +38,13 @@ function WhatToEat(props: FoodProps) {
               <div className="article">
                 <div className="frame">
                   <div className="title-3">Breakfast</div>
-                  <p className="subtitle">{props.calories} calories</p>
-                  <p className="div">{props.foodName}</p>
+                  <p className="subtitle">445kcal</p>
+                  <ul>
+                    <li>Scrambled egg (200g) 298kcal</li>
+                    <li>Whole wheat bread (50g) 131kcal</li>
+                    <li>Saus sambal ABC (20g) 62kkal</li>
+                  </ul>
+
                   <div className="selection">
                     <div className="label-normal">
                       <div className="label-text">Healthy Food</div>
@@ -52,8 +57,13 @@ function WhatToEat(props: FoodProps) {
               <div className="article">
                 <div className="frame">
                   <div className="title-3">Lunch</div>
-                  <p className="subtitle">{props.calories} calories</p>
-                  <p className="div">{props.foodName}</p>
+                  <p className="subtitle">383kcal</p>
+                  <ul>
+                    <li>White rice, cooked (100g) 130kcal</li>
+                    <li>Grilled chicken breast (100g) 131kcal</li>
+                    <li>Stir fry bokchoy (little bit of oil) (50g) 102kkal</li>
+                  </ul>
+
                   <div className="selection">
                     <div className="label-normal">
                       <div className="label-text">Healthy Food</div>
@@ -66,8 +76,12 @@ function WhatToEat(props: FoodProps) {
               <div className="article">
                 <div className="frame">
                   <div className="title-3">Dinner</div>
-                  <p className="subtitle">{props.calories} calories</p>
-                  <p className="div">{props.foodName}</p>
+                  <p className="subtitle">383kcal</p>
+                  <ul>
+                    <li>White rice, cooked (100g) 130kcal</li>
+                    <li>White fish fillet, raw (150g) 258kcal</li>
+                    <li>Stir fry broccoli (little bit of oil) (85g) 144kkal</li>
+                  </ul>
                   <div className="selection">
                     <div className="label-normal">
                       <div className="label-text">Healthy Food</div>
@@ -76,80 +90,21 @@ function WhatToEat(props: FoodProps) {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="section">
-        <div className="container">
-          <div className="title-14">Additional Supplements</div>
-          <p className="div">Some supplements to support weight loss</p>
-          <div className="list-image">
-            <div className="card">
-              <div className="image-container">
-                <div className="image">
-                  <div className="text-wrapper">Image of multivitamin</div>
-                  <div className="tag">
-                    <div className="text">Vitamins</div>
+            <div className="row">
+              <div className="article">
+                <div className="frame">
+                  <div className="title-3">Snacks</div>
+                  <p className="subtitle">206kcal</p>
+                  <ul>
+                    <li>Papaya (200g) 86kcal</li>
+                    <li>Whey protein powder (30g) 120kcal</li>
+                    <li>Granola (30g) 139kcal</li>
+                  </ul>
+                  <div className="selection">
+                    <div className="label-normal">
+                      <div className="label-text">Healthy Food</div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div className="text-content">
-                <div className="div">Multivitamins</div>
-                <div className="subtitle">Provides essential nutrients</div>
-                <div className="icon-buttons">
-                  <div className="icon">💊</div>
-                </div>
-              </div>
-            </div>
-            <div className="card">
-              <div className="image-container">
-                <div className="image">
-                  <div className="text-wrapper">Image of multivitamin</div>
-                  <div className="tag">
-                    <div className="text">Vitamins</div>
-                  </div>
-                </div>
-              </div>
-              <div className="text-content">
-                <div className="div">Multivitamins</div>
-                <div className="subtitle">Provides essential nutrients</div>
-                <div className="icon-buttons">
-                  <div className="icon">💊</div>
-                </div>
-              </div>
-            </div>
-            <div className="card">
-              <div className="image-container">
-                <div className="image">
-                  <div className="text-wrapper">Image of multivitamin</div>
-                  <div className="tag">
-                    <div className="text">Vitamins</div>
-                  </div>
-                </div>
-              </div>
-              <div className="text-content">
-                <div className="div">Multivitamins</div>
-                <div className="subtitle">Provides essential nutrients</div>
-                <div className="icon-buttons">
-                  <div className="icon">💊</div>
-                </div>
-              </div>
-            </div>
-            <div className="card">
-              <div className="image-container">
-                <div className="image">
-                  <div className="text-wrapper">Image of multivitamin</div>
-                  <div className="tag">
-                    <div className="text">Vitamins</div>
-                  </div>
-                </div>
-              </div>
-              <div className="text-content">
-                <div className="div">Multivitamins</div>
-                <div className="subtitle">Provides essential nutrients</div>
-                <div className="icon-buttons">
-                  <div className="icon">💊</div>
                 </div>
               </div>
             </div>

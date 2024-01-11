@@ -109,16 +109,14 @@
 
   /*EDIT THIS*/
   .paginate {
-    align-items: center;
     border-radius: 6px;
-    display: inline-flex;
-    flex: 0 0 auto;
-    flex-direction: column;
-    justify-content: center;
     padding: 8px;
-    position: relative;
-
+    list-style: none;
+    display: inline-block;
+    background-color: red;
   }
+
+
   .section .metric{
     align-items: flex-start;
     border: 1px solid;
@@ -378,8 +376,10 @@
     padding: 4px 0px;
     position: relative;
     object-fit: contain;
+    border-radius: 10px;
   }
 
+ 
   .page .image-container-benefit {
     align-items: flex-start;
     display: flex;
@@ -416,12 +416,12 @@
     position: relative;
   }
 
-  .page .image-cardio {
+   .image-cardio {
     background-color: #d8d8d880;
     flex: 1;
     flex-grow: 1;
     position: relative;
-    align-content: center;
+    width: 20px;
   }
 
   .image-container img {
@@ -440,13 +440,14 @@
   }
   
   
-  .page .vector {
+   .vector {
     height: 1px;
     left: 0;
     object-fit: cover;
     position: absolute;
     top: 520px;
     width: 1440px;
+    background-color: #000000;
   }
   
   .page .image-wrapper {
@@ -469,6 +470,8 @@
     width: 100px;
     position: relative;
     background-color: brown;
+    object-fit: contain;
+    
   }
   
   
