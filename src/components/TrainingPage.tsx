@@ -32,10 +32,10 @@ class TrainingPage extends Component {
 
             <hr
               style={{
-                borderBottom: "1px solid #888",
-                width: "100px",
+                borderBottom: "10px solid #000000",
+                width: "1000px",
                 color: "black",
-                height: "5px",
+                height: "3px",
               }}
             />
           </div>
@@ -225,6 +225,7 @@ class TrainingPage extends Component {
               machine.
             </p>
 
+            <hr />
             <div className="image-container">
               <div className="image"></div>
             </div>

@@ -15,7 +15,7 @@
     gap: 20px;
     height: 80px;
     justify-content: center;
-    left: 0;
+    left: 50px;
     padding: 20px;
     padding-left: 50px;
     padding-right: 100px;
@@ -25,6 +25,13 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
   
+  }
+
+  .hr-yey{
+    border-bottom: "10px solid #000000";
+    width: "1000px";
+    color: "black";
+    height: "3px";
   }
   
   .rectangle {
@@ -113,7 +120,7 @@
     padding: 8px;
     list-style: none;
     display: inline-block;
-    background-color: red;
+    font-family: 'Courier New', Courier, monospace;
   }
 
 
