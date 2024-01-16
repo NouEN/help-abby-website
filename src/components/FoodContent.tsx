@@ -228,8 +228,9 @@ function FoodContent() {
             <div className="title">Great!</div>
             <div className="div-desc">
               Now we know what her BMR and TDEE calories is. To lose weight, we
-              should eat at 200 - 500 less than our TDEE calories. Let's find
-              out what Abby can eat in that range of calories.
+              should eat at 200 - 500 less than our TDEE calories and DON'T go
+              below the BMR calories. Let's find out what Abby can eat in that
+              range of calories.
             </div>
             <div className="button-eat-container">
               <Link to="/whattoeat">
