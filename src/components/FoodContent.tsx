@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { left } from "@popperjs/core";
 
 interface CalorieState {
   tdee: number;
@@ -19,6 +20,7 @@ function FoodContent() {
   const [bmr, setBmr] = useState(0);
   const [tdee, setTdee] = useState(0);
   const [calculated, setCalculated] = useState(false);
+  const [count, setCount] = useState(0);
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -29,11 +31,13 @@ function FoodContent() {
       data
     );
     console.log(response);
+    setCalculated(true);
+
     if (response.data.status == "SUCCESS") {
       setBmr(response.data.bmr);
       setTdee(response.data.tdee);
       setCalculated(true);
-      console.log("caluclated is {}", calculated);
+      console.log("calculated is {}", calculated);
     } else {
       alert("Wrong input! Input Abby's measurement details.");
     }
@@ -43,14 +47,6 @@ function FoodContent() {
     setBmr(0);
     setTdee(0);
     window.location.reload();
-  };
-
-  const checkCalculated = async () => {
-    if (calculated == true) {
-      return "/whattoeat";
-    } else {
-      return "/food";
-    }
   };
 
   return (
@@ -98,13 +94,10 @@ function FoodContent() {
                 <label className="title-4 form-label">Gender</label>
                 <select
                   className="textfield"
-                  defaultValue=""
                   required
                   onChange={(e) => setGender(e.target.value)}
                 >
-                  <option value="gender" selected>
-                    Gender
-                  </option>
+                  <option value="">Gender</option>
                   <option value="Female">Female</option>
                   <option value="Male">Male</option>
                 </select>
@@ -196,6 +189,24 @@ function FoodContent() {
                   </div>
                 </button>
               </div>
+              <p className="subtitle-calculator">
+                *BMR Formula is based on Revised Harris-Benedict Equation by
+                <a
+                  href="https://www.mdpi.com/2218-1989/13/2/189"
+                  className="subtitle-calculator"
+                >
+                  Pavlidou, et. al (2023)
+                </a>
+              </p>
+              <p className="subtitle-calculator">
+                *Activity level categories :
+                <ul>
+                  <li>Sedentary : Rarely or never works out</li>
+                  <li>Lightly Active : Works out 1-2x/week</li>
+                  <li>Moderately Active : Works out 3-5x/week</li>
+                  <li>Very Active : Works out twice a day or 6-7x/week</li>
+                </ul>
+              </p>
             </form>
           </div>
 
@@ -213,7 +224,7 @@ function FoodContent() {
             </div>
           </div>
 
-          <div className="div">
+          <div className="div" hidden={calculated == true ? false : true}>
             <div className="title">Great!</div>
             <div className="div-desc">
               Now we know what her BMR and TDEE calories is. To lose weight, we
@@ -222,10 +233,7 @@ function FoodContent() {
             </div>
             <div className="button-eat-container">
               <Link to="/whattoeat">
-                <button
-                  className="button btn-eat"
-                  disabled={calculated == true ? true : false}
-                >
+                <button className="button btn-eat">
                   <div className="primary">
                     <div className="title-2">What To Eat</div>
                   </div>

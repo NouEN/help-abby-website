@@ -760,6 +760,17 @@
     position: relative;
   }
 
+  .page .subtitle-calculator {
+    align-self: stretch;
+    color: #00000080;
+    font-family: "Roboto-Regular", Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 20px;
+    position: relative;
+  }
+
   .page .subtitle-macro {
     align-self: stretch;
     color: #00000080;
