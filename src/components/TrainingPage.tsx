@@ -62,6 +62,12 @@ class TrainingPage extends Component {
                     Running is a great way to improve your stamina and burn
                     calories.
                   </p>
+                  <a
+                    href="https://youtu.be/_kGESn8ArrU?si=asgqCBgD2cuFMnXI"
+                    target="__blank"
+                  >
+                    How to Run in Proper Form
+                  </a>
                   <div className="selection">
                     <div className="label-normal">
                       <div className="label-text">Cardiovascular</div>
@@ -90,6 +96,12 @@ class TrainingPage extends Component {
                     improving your stamina and burn calories. It is also working
                     your legs.
                   </p>
+                  <a
+                    href="https://youtu.be/rEqRmKAQ5xM?si=pPDwYsey9Pj-NQxo"
+                    target="__blank"
+                  >
+                    Follow Along Stationary Bike Workout
+                  </a>
                   <div className="selection">
                     <div className="label-normal">
                       <div className="label-text">Cardiovascular</div>
@@ -118,6 +130,12 @@ class TrainingPage extends Component {
                     without stressing your body. It is a low impact exercise
                     which means it is suitable for people with joint problems.
                   </p>
+                  <a
+                    href="https://youtu.be/AQy_c30lNjI?si=6kPfPUrpWdEwTk3f"
+                    target="__blank"
+                  >
+                    How To Swim Freestyle (Technique Tutorial)
+                  </a>
                   <div className="selection">
                     <div className="label-normal">
                       <div className="label-text">Cardiovascular</div>
@@ -256,6 +274,12 @@ class TrainingPage extends Component {
                     Squats target your quads, hamstrings, and glutes for overall
                     lower body strength.
                   </p>
+                  <a
+                    href="https://youtu.be/2t3Ab7a2ZM4?si=dtaqL1kAiUfh45Et"
+                    target="__blank"
+                  >
+                    How To Squat Properly
+                  </a>
                   <div className="selection">
                     <div className="label-normal">
                       <div className="label-text">Muscle Building</div>
@@ -283,6 +307,12 @@ class TrainingPage extends Component {
                     Push-ups work your chest, shoulders, triceps, and core for a
                     strong upper body.
                   </p>
+                  <a
+                    href="https://youtu.be/bt5b9x9N0KU?si=sI0Zz38--dRtN6Bz"
+                    target="__blank"
+                  >
+                    How To Push-up Properly
+                  </a>
                   <div className="selection">
                     <div className="label-normal">
                       <div className="label-text">Upper Body Strength</div>
@@ -313,6 +343,12 @@ class TrainingPage extends Component {
                     Planks works your core stability adn strength to protect
                     your back in your daily life.
                   </p>
+                  <a
+                    href="https://youtu.be/y1uinA_JknM?si=RnhYZgQcGDm0igzF"
+                    target="__blank"
+                  >
+                    How To Do Planks Properly
+                  </a>
                   <div className="selection">
                     <div className="label-normal">
                       <div className="label-text">Core Stability</div>
@@ -412,6 +448,12 @@ class TrainingPage extends Component {
                     Stretching exercises help to maintain or improve
                     flexibility.
                   </p>
+                  <a
+                    href="https://youtu.be/g_tea8ZNk5A?si=bqSpgLLrSPWVis2S"
+                    target="__blank"
+                  >
+                    15 Minutes Full Body Stretching Routine
+                  </a>
                   <div className="selection">
                     <div className="label-normal">
                       <div className="label-text">Flexibility</div>
@@ -439,6 +481,12 @@ class TrainingPage extends Component {
                     Yoga combines stretching, balance, and breathing for overall
                     flexibility and relaxation.
                   </p>
+                  <a
+                    href="https://youtu.be/ZiQh8jA5tVM?si=M7DsVpi8eI4giHr1"
+                    target="__blank"
+                  >
+                    Healthy Body Yoga
+                  </a>
                   <div className="selection">
                     <div className="label-normal">
                       <div className="label-text">Flexibility</div>
