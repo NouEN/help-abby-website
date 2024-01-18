@@ -37,21 +37,24 @@ function MythPage() {
         </div>
       </div>
 
-      <div className="section">
-        <div className="container">
-          <div className="book-list">
-            {mythList.map((myth, index) => (
-              <ul>
-                <li>{myth.id}</li>
-                <li>Myth Name: {myth.mythDesc}</li>
-                <li>Calories: {myth.factDesc}</li>
-                <li>{myth.source}</li>
-              </ul>
-            ))}
+      {mythList.map((myth: Myth, index) => (
+        <div className="section">
+          <div className="container">
+            <div className="text-wrapper">Myth #{myth.id}</div>
+            <p className="title">{myth.mythDesc}</p>
           </div>
-          <div className="">More myths to be debunked coming soon!</div>
+          <div className="list-myth">
+            <div className="myth-item">
+              <div className="myth-div">
+                <div className="text-wrapper">Fact</div>
+                <div className="div">{myth.factDesc}</div>
+              </div>
+              <p className="subtitle-calculator">{myth.source}</p>
+            </div>
+          </div>
         </div>
-      </div>
+      ))}
+      <div className="">More myths to be debunked coming soon!</div>
     </div>
   );
   // render() {

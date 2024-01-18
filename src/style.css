@@ -495,6 +495,50 @@
     width: 100%;
   }
   
+  .page .list-myth {
+    align-items: flex-start;
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
+    gap: 40px;
+    justify-content: center;
+    padding: 20px 0px;
+    position: relative;
+  }
+
+  .item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    padding: 12px 0px;
+    position: relative;
+    width: 340px;
+  }
+
+  .frame-myth {
+    background-color: #0000000d;
+    border-radius: 50px;
+    height: 100px;
+    position: relative;
+    width: 100px;
+  }
+
+  .book-list {
+    align-content: center;
+  }
+
+  .frame-2{
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 8px;
+    position: inherit;
+  }
+  
    .page .list-benefit {
     align-items: center;
     display: flex;
