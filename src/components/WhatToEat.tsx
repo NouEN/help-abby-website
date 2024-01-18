@@ -7,6 +7,7 @@ type FoodProps = {
   foodId: string;
   foodName: string;
   calories: number;
+  category: string;
   carbs: number;
   protein: number;
   fat: number;

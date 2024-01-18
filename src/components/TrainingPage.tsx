@@ -567,7 +567,13 @@ class TrainingPage extends Component {
             </div>
             <ul className="subtitle-calculator">
               <p className="source-title">Source :</p>
-              <li>https://www.mdpi.com/2673-995X/3/1/10</li>
+              <li>
+                Bouguezzi, R., Sammoud, S., Markov, A., Negra, Y., & Chaabene,
+                H. (2023). Why flexibility deserves to be further considered as
+                a standard component of Physical Fitness: A narrative review of
+                existing insights from static stretching study interventions.
+                Youth, 3(1), 146–156. doi:10.3390/youth3010010{" "}
+              </li>
             </ul>
           </div>
         </div>

@@ -74,6 +74,10 @@ function FoodContent() {
             calories is?
           </p>
 
+          <p className="div-desc" style={{ color: "orange" }}>
+            (Hint : Use the calorie calculator below!)
+          </p>
+
           <div className="calculator">
             <form method="post" onSubmit={handleSubmit}>
               <div className="title">Calorie Calculator</div>
