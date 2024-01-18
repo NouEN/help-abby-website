@@ -227,6 +227,20 @@ class TrainingPage extends Component {
                 </div>
               </div>
             </div>
+
+            <ul className="subtitle-calculator">
+              <p className="source-title">Source :</p>
+              <li>
+                Agarwal S. K. (2012). Cardiovascular benefits of exercise.
+                International journal of general medicine, 5, 541–545.
+                https://doi.org/10.2147/IJGM.S30113
+              </li>
+              <li>
+                Nystoriak, M. A., & Bhatnagar, A. (2018). Cardiovascular Effects
+                and Benefits of Exercise. Frontiers in cardiovascular medicine,
+                5, 135. https://doi.org/10.3389/fcvm.2018.00135
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -406,6 +420,15 @@ class TrainingPage extends Component {
                 </div>
               </div>
             </div>
+            <ul className="subtitle-calculator">
+              <p className="source-title">Source :</p>
+              <li>
+                Thomas, M. H., & Burns, S. P. (2016). Increasing Lean Mass and
+                Strength: A Comparison of High Frequency Strength Training to
+                Lower Frequency Strength Training. International journal of
+                exercise science, 9(2), 159–167.
+              </li>
+            </ul>
           </div>
         </div>
         <div className="section">
@@ -542,6 +565,10 @@ class TrainingPage extends Component {
                 </div>
               </div>
             </div>
+            <ul className="subtitle-calculator">
+              <p className="source-title">Source :</p>
+              <li>https://www.mdpi.com/2673-995X/3/1/10</li>
+            </ul>
           </div>
         </div>
 
