@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 type Myth = {
+  id: number;
   mythDesc: string;
   factDesc: string;
   source: string;

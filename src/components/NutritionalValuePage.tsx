@@ -67,7 +67,7 @@ function NutritionalValuePage() {
             onChange={(e) => setFilterStr(e.target.value)}
           />
           <div className="list">
-            {foodListSliced.filter(filterStr).map((food: Food, index) => (
+            {foodListSliced.map((food: Food, index) => (
               <div className="row">
                 <div className="article">
                   <div className="frame">
