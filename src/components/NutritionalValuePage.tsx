@@ -44,6 +44,8 @@ function NutritionalValuePage() {
     setItemOffset(newOffset);
   };
 
+  const [filterStr, setFilterStr] = useState("");
+
   return (
     <div className="page">
       <div className="section">
@@ -59,8 +61,13 @@ function NutritionalValuePage() {
 
       <div className="section">
         <div className="container">
+          <input
+            type="text"
+            value={filterStr}
+            onChange={(e) => setFilterStr(e.target.value)}
+          />
           <div className="list">
-            {foodListSliced.map((food: Food, index) => (
+            {foodListSliced.filter(filterStr).map((food: Food, index) => (
               <div className="row">
                 <div className="article">
                   <div className="frame">
