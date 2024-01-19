@@ -7,7 +7,9 @@ function Navbar() {
   return (
     <div className="navbar-top">
       <img src="src\assets\images\logo.png" className="rectangle" />
-      <div className="title">HelpAbby</div>
+      <div className="title" style={{ color: "#F8F7F3" }}>
+        HelpAbby
+      </div>
       <ul className="navbar-options">
         <li className="nav-item">
           <Link to="/" className="nav-link" aria-current="page">
