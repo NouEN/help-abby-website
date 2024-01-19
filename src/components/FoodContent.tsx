@@ -92,7 +92,7 @@ function FoodContent() {
             <form method="post" onSubmit={handleSubmit}>
               <div className="title">Calorie Calculator</div>
               <div className="div-form">
-                <label className="title-4">Age</label>
+                <label className="title-4-calculator">Age</label>
                 <input
                   type="text"
                   className="textfield"
@@ -105,7 +105,7 @@ function FoodContent() {
               </div>
 
               <div className="div-form">
-                <label className="title-4 form-label">Gender</label>
+                <label className="title-4-calculator form-label">Gender</label>
                 <select
                   className="textfield"
                   required
@@ -119,7 +119,7 @@ function FoodContent() {
               </div>
 
               <div className="div-form">
-                <label className="title-4">Height</label>
+                <label className="title-4-calculator">Height</label>
                 <input
                   type="text"
                   className="textfield"
@@ -132,7 +132,7 @@ function FoodContent() {
               </div>
 
               <div className="div-form">
-                <label className="title-4">Weight</label>
+                <label className="title-4-calculator">Weight</label>
                 <input
                   type="text"
                   className="textfield"
@@ -145,12 +145,13 @@ function FoodContent() {
               </div>
 
               <div className="div-form">
-                <label className="title-4">Activity Level</label>
+                <label className="title-4-calculator">Activity Level</label>
                 <div className="chip-group textfield">
                   <div className="chip-2">
                     <button
                       type="button"
                       className="div btn btn-secondary"
+                      style={{ backgroundColor: "#BA9898" }}
                       onClick={() => setActivityLevel("Sedentary")}
                     >
                       Sedentary{" "}
@@ -160,6 +161,7 @@ function FoodContent() {
                     <button
                       type="button"
                       className="div btn btn-secondary"
+                      style={{ backgroundColor: "#BA9898" }}
                       onClick={() => setActivityLevel("Lightly Active")}
                     >
                       Lightly Active{" "}
@@ -170,6 +172,7 @@ function FoodContent() {
                     <button
                       type="button"
                       className="div btn btn-secondary"
+                      style={{ backgroundColor: "#BA9898" }}
                       onClick={() => setActivityLevel("Moderately Active")}
                     >
                       Moderately Active{" "}
@@ -179,6 +182,7 @@ function FoodContent() {
                     <button
                       type="button"
                       className="div btn btn-secondary"
+                      style={{ backgroundColor: "#BA9898" }}
                       onClick={() => setActivityLevel("Very Active")}
                     >
                       Very Active{" "}
@@ -198,7 +202,7 @@ function FoodContent() {
                   </div>
                 </button>
                 <button className="button btn-form" type="submit">
-                  <div className="primary">
+                  <div className="primary-pink">
                     <div className="title-2">Calculate</div>
                   </div>
                 </button>
@@ -207,7 +211,7 @@ function FoodContent() {
                 *BMR Formula is based on Revised Harris-Benedict Equation by
                 <a
                   href="https://www.mdpi.com/2218-1989/13/2/189"
-                  className="subtitle-calculator"
+                  className="subtitle-calculator-a"
                 >
                   Pavlidou, et. al (2023)
                 </a>
@@ -263,13 +267,13 @@ function FoodContent() {
                   disabled={isTrue == true || isFalse == true ? true : false}
                 >
                   <div
-                    className="secondary-boolean"
+                    className="primary-pink"
                     style={{
                       backgroundColor: isTrue ? "#77DD77" : "",
                       color: isTrue ? "white" : "",
                     }}
                   >
-                    <div className="title-3">TRUE</div>
+                    <div className="title-2">TRUE</div>
                   </div>
                 </button>
 
@@ -279,13 +283,13 @@ function FoodContent() {
                   disabled={isTrue == true || isFalse == true ? true : false}
                 >
                   <div
-                    className="secondary-boolean"
+                    className="primary-pink"
                     style={{
                       backgroundColor: isFalse ? "#FF6961" : "",
                       color: isFalse ? "white" : "",
                     }}
                   >
-                    <div className="title-3">FALSE</div>
+                    <div className="title-2">FALSE</div>
                   </div>
                 </button>
               </div>
@@ -332,7 +336,7 @@ function FoodContent() {
             <div className="button-eat-container">
               <Link to="/whattoeat">
                 <button className="button btn-eat">
-                  <div className="primary">
+                  <div className="primary-pink">
                     <div className="title-2">What To Eat</div>
                   </div>
                 </button>
@@ -361,7 +365,7 @@ function FoodContent() {
                 <div className="frame">
                   <div className="title-3">Carbohydrates</div>
                   <div className="subtitle-macro">Primary source of energy</div>
-                  <p className="subtitle-2">
+                  <p className="div-desc">
                     Carbohydrates provide the body with energy for daily
                     activities and exercise. They are found in foods like bread,
                     rice, and pasta.
@@ -382,7 +386,7 @@ function FoodContent() {
                         src="src\assets\images\doctor.png"
                       ></img>
                       <div className="title-wrapper">
-                        <div className="title-5">Dr.Nutrition</div>
+                        <div className="title-4-avatar">Dr.Nutrition</div>
                       </div>
                     </div>
                   </div>
@@ -403,7 +407,7 @@ function FoodContent() {
                   <div className="subtitle-macro">
                     Building Blocks for Growth and Repair
                   </div>
-                  <p className="subtitle-2">
+                  <p className="div-desc">
                     Protein is essential for muscle growth and repair, as well
                     as supporting various bodily functions. Sources of protein
                     include meat, fish, and legumes.
@@ -424,7 +428,7 @@ function FoodContent() {
                         src="src\assets\images\doctor.png"
                       ></img>
                       <div className="title-wrapper">
-                        <div className="title-5">Dr.Nutrition</div>
+                        <div className="title-4-avatar">Dr.Nutrition</div>
                       </div>
                     </div>
                   </div>
@@ -445,7 +449,7 @@ function FoodContent() {
                   <div className="subtitle-macro">
                     Energy Storage and Insulation
                   </div>
-                  <p className="subtitle-2">
+                  <p className="div-desc">
                     Fats provide long-term energy storage for the body, as well
                     as insulation and protection of vital organs. They can be
                     found in foods such as nuts, oils, and avocados.
@@ -466,7 +470,7 @@ function FoodContent() {
                         src="src\assets\images\doctor.png"
                       ></img>
                       <div className="title-wrapper">
-                        <div className="title-5">Dr.Nutrition</div>
+                        <div className="title-4-avatar">Dr.Nutrition</div>
                       </div>
                     </div>
                   </div>
@@ -486,7 +490,7 @@ function FoodContent() {
             <div className="button-eat-container">
               <Link to="/food/foodlist">
                 <button className="btn-eat">
-                  <div className="primary-other">
+                  <div className="primary-pink-large">
                     <div className="title-2">List of Nutritional Value</div>
                   </div>
                 </button>

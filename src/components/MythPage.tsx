@@ -48,7 +48,7 @@ function MythPage() {
             <div className="myth-item">
               <div className="myth-div">
                 <div className="text-wrapper">Fact</div>
-                <div className="div">{myth.factDesc}</div>
+                <div className="div-fact">{myth.factDesc}</div>
               </div>
               <p className="subtitle-calculator">{myth.source}</p>
             </div>
@@ -56,41 +56,13 @@ function MythPage() {
         </div>
       ))}
       <div className="">More myths to be debunked coming soon!</div>
+      <div className="container-wrapper">
+        <div className="container-3">
+          <p className="title-footer">HelpAbby © 2024. All rights reserved.</p>
+        </div>
+      </div>
     </div>
   );
-  // render() {
-  //   return (
-  //     <div className="page">
-  //       <Navbar></Navbar>
-
-  //       <div className="section">
-  //         <div className="container">
-  //           <div className="text-wrapper-title">Myths and Facts</div>
-  //           <div className="p-text-wrapper">
-  //             Dispelling common misconceptions about health and fitness
-  //           </div>
-  //         </div>
-  //       </div>
-  //       <div className="section">
-  //         <div className="container">
-  //           <div className="title-myth">Myth {this.props.mythId}</div>
-  //           <p className="p">{this.props.mythDesc}</p>
-  //         </div>
-  //         <div className="container">
-  //           <div className="list-2">
-  //             <div className="item">
-  //               <div className="frame-2">
-  //                 <div className="subtitle">Fact</div>
-  //               </div>
-  //               <p className="subtitle-2">{this.props.factDesc}</p>
-  //               <p className="subtitle-2">Source : {this.props.source}</p>
-  //             </div>
-  //           </div>
-  //         </div>
-  //       </div>
-  //     </div>
-  //   );
-  // }
 }
 
 export default MythPage;

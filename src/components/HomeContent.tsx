@@ -28,7 +28,7 @@ class HomeContent extends Component {
             </p>
             <Link to="/food">
               <button className="button">
-                <div className="primary">
+                <div className="primary-pink">
                   <div className="title-2">Start Now</div>
                 </div>
               </button>
@@ -76,7 +76,7 @@ class HomeContent extends Component {
                           className="ava-2"
                         />
                         <div className="title-wrapper">
-                          <div className="title-4">Abby</div>
+                          <div className="title-4-avatar">Abby</div>
                         </div>
                       </div>
                     </div>
@@ -130,7 +130,7 @@ class HomeContent extends Component {
                           className="ava-2"
                         />
                         <div className="title-wrapper">
-                          <div className="title-4">School Doctor</div>
+                          <div className="title-4-avatar">School Doctor</div>
                         </div>
                       </div>
                     </div>
@@ -164,7 +164,7 @@ class HomeContent extends Component {
                   </div>
                   <div className="frame">
                     <div className="title-3">Physical Challenges</div>
-                    <div className="subtitle">PE Class</div>
+
                     <p className="div">
                       During a physical education class, Abby struggled to run,
                       felt out of breath, and got dizzy. It&#39;s important for
@@ -182,7 +182,7 @@ class HomeContent extends Component {
                           className="ava-2"
                         />
                         <div className="title-wrapper">
-                          <div className="title-4">PE Teacher</div>
+                          <div className="title-4-avatar">PE Teacher</div>
                         </div>
                       </div>
                     </div>
@@ -233,7 +233,7 @@ class HomeContent extends Component {
                           className="ava-2"
                         />
                         <div className="title-wrapper">
-                          <div className="title-4">Abby</div>
+                          <div className="title-4-avatar">Abby</div>
                         </div>
                       </div>
                     </div>
@@ -284,7 +284,7 @@ class HomeContent extends Component {
                           className="ava-2"
                         />
                         <div className="title-wrapper">
-                          <div className="title-4">Abby</div>
+                          <div className="title-4-avatar">Abby</div>
                         </div>
                       </div>
                     </div>
@@ -318,7 +318,9 @@ class HomeContent extends Component {
         <div className="section">
           <div className="container-wrapper">
             <div className="container-3">
-              <p className="title-1">HelpAbby © 2024. All rights reserved.</p>
+              <p className="title-footer">
+                HelpAbby © 2024. All rights reserved.
+              </p>
             </div>
           </div>
         </div>

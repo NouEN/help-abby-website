@@ -80,7 +80,7 @@ function NutritionalValuePage() {
               })
               .map((food: Food, index) => (
                 <div className="row">
-                  <div className="article">
+                  <div className="article-nutrition">
                     <div className="frame">
                       <div className="icon">⭐</div>
                       <div className="title-3">{food.foodName}</div>
@@ -108,6 +108,11 @@ function NutritionalValuePage() {
               className="paginate"
             />
           </div>
+        </div>
+      </div>
+      <div className="container-wrapper">
+        <div className="container-3">
+          <p className="title-footer">HelpAbby © 2024. All rights reserved.</p>
         </div>
       </div>
     </div>

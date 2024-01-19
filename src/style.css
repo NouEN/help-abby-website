@@ -1,3 +1,25 @@
+@font-face {
+  font-family: 'Emporia-Roman';
+  src: local('fonts'), url(./assets/fonts/Emporia-Roman.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Hakuna-Sans';
+  src: local('fonts'), url(./assets/fonts/Hakuna-Sans.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Role-Model';
+  src: local('fonts'), url(./assets/fonts/Role-Model.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Comforta';
+  src: local('fonts'), url(./assets/fonts/Comfortaa-Thin.ttf) format('trueype');
+}
+
+
+
 .page {
     align-items: center;
     background-color: #F8F7F3;
@@ -5,6 +27,7 @@
     flex-direction: column;
     padding: 80px 0px 0px;
     position: relative;
+    width: 100%;
   }
   
   .navbar-top {
@@ -15,13 +38,13 @@
     gap: 20px;
     height: 80px;
     justify-content: center;
-    left: 50px;
+  
     padding: 20px;
     padding-left: 50px;
     padding-right: 100px;
     position: absolute;
     top: 0;
-    width: 1780px;
+    width: 100%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
   
@@ -42,9 +65,9 @@
   }
   
   .page .title {
-    color: #000000;
+    color: #303030;
     flex: 1;
-    font-family: "Roboto-Medium", Helvetica;
+    font-family: "Emporia-Roman";
     font-size: 28px;
     font-weight: 500;
     letter-spacing: 0;
@@ -52,8 +75,20 @@
     position: relative;
   }
 
+  .page .title-footer {
+    color: #303030;
+    flex: 1;
+    font-family: "Emporia-Roman";
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 36px;
+    position: relative;
+  }
+
+
   .frame .title-macro {
-    color: #000000;
+    color: #303030;
     flex: 1;
     font-family: "Roboto-Medium", Helvetica;
     font-size: 20px;
@@ -83,9 +118,9 @@
   
   .nav-item {
     color: #F8F7F3;
-    font-family: "Roboto-Bold", Helvetica;
+    font-family: "Emporia-Roman";
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 0;
     line-height: 24px;
     margin-top: -1px;
@@ -151,8 +186,8 @@
   
   .page .text-wrapper {
     align-self: stretch;
-    color: #000000;
-    font-family: "Roboto-Bold", Helvetica;
+    color: #303030;
+    font-family: "Emporia-Roman";
     font-size: 40px;
     font-weight: 700;
     letter-spacing: 0;
@@ -163,7 +198,7 @@
 
   .page .text-wrapper-benefit-title{
     align-self: stretch;
-    color: #000000;
+    color: #303030;
     font-family: "Roboto-Bold", Helvetica;
     font-size: 20px;
     font-weight: 600;
@@ -176,8 +211,8 @@
 
   .page .text-wrapper-title {
     align-self: stretch;
-    color: #000000;
-    font-family: "Roboto-Bold", Helvetica;
+    color: #303030;
+    font-family: "Emporia-Roman";
     font-size: 40px;
     font-weight: 700;
     letter-spacing: 0;
@@ -188,7 +223,7 @@
   }
 
   .page .text-wrapper-card {
-    color: #000000;
+    color: #303030;
     font-family: "Roboto-Regular", Helvetica;
     font-size: 12px;
     font-weight: 400;
@@ -221,7 +256,7 @@
     -webkit-line-clamp: 1;
     display: -webkit-box;
     align-self: stretch;
-    color: #000000;
+    color: #303030;
     font-family: "Roboto-Bold", Helvetica;
     font-size: 28px;
     font-weight: 100;
@@ -238,19 +273,32 @@
   
   .page .div {
     align-self: stretch;
-    color: #000000;
-    font-family: "Roboto-Regular", Helvetica;
-    font-size: 16px;
-    font-weight: 400;
+    color: #303030;
+    font-family: "Emporia-Roman";
+    font-size: 18px;
+    font-weight: 100;
     letter-spacing: 0;
-    line-height: 24px;
+    line-height: 30px;
+    position: relative;
+    justify-content: right;
+  }
+
+  .page .div-fact {
+    margin-top: 20px;
+    align-self: stretch;
+    color: #303030;
+    font-family: "Emporia-Roman";
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 0;
+    line-height: 35px;
     position: relative;
     justify-content: right;
   }
 
   .page .div-quiz {
     align-self: stretch;
-    color: #000000;
+    color: #303030;
     font-family: "Roboto-Regular", Helvetica;
     font-size: 16px;
     font-weight: 400;
@@ -276,7 +324,7 @@
 
   .page .title-myth {
     align-self: stretch;
-    color: #000000;
+    color: #303030;
     font-family: "Roboto-Bold", Helvetica;
     font-size: 40px;
     font-weight: 700;
@@ -288,8 +336,8 @@
 
   .page .div-desc {
     align-self: stretch;
-    color: #000000;
-    font-family: "Roboto-Regular", Helvetica;
+    color: #303030;
+    font-family: "Emporia-Roman";
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 0;
@@ -299,7 +347,7 @@
 
   .page .div-form {
     align-self: stretch;
-    color: #000000;
+    color: #303030;
     font-family: "Roboto-Regular", Helvetica;
     font-size: 16px;
     font-weight: 400;
@@ -387,9 +435,9 @@
     width: 160px;
   }
 
-  .page .primary-other {
+  .page .primary-pink {
     align-items: center;
-    background-color: #000000;
+    background-color: #E89DA7;
     border-radius: 8px;
     display: flex;
     flex: 0 0 auto;
@@ -397,14 +445,30 @@
     justify-content: center;
     padding: 12px;
     position: relative;
-    width: 200px;
-    padding: 20px;
+    width: 160px;
+  }
+
+  .page .primary-pink-large {
+    align-items: center;
+    background-color: #E89DA7;
+    border-radius: 8px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px;
+    position: relative;
+    width: 300px;
   }
 
   .input-nutritional-value {
     width: 250px;
     padding: 5px;
     border-radius: 5px;
+    font-family: "Emporia-Roman";
+    font-size: 20px;
+    border : solid 1px #303030;
+    left: 0px;
  
   }
 
@@ -440,7 +504,7 @@
   
   .page .title-2 {
     color: #ffffff;
-    font-family: "Roboto-Medium", Helvetica;
+    font-family: "Hakuna-Sans";
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0;
@@ -691,7 +755,23 @@
     justify-content: center;
     padding: 16px;
     position: relative;
-    background-color: lightcoral
+    background-color: #F2C6CD
+  }
+
+  .article-nutrition {
+    align-items: flex-start;
+    border: 1px solid;
+    border-color: #0000001a;
+    border-radius: 6px;
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
+    gap: 16px;
+    justify-content: center;
+    padding: 16px;
+    position: relative;
+    color: #ffffff;
+    background-color: #95B6D6;
   }
   
   .page .div-wrapper {
@@ -732,10 +812,10 @@
   
   .page .title-3 {
     align-self: stretch;
-    color: #000000;
-    font-family: "Roboto-Medium", Helvetica;
+    color: #303030;
+    font-family: "Emporia-Roman";
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 550;
     letter-spacing: 0;
     line-height: 28px;
     margin-top: -1px;
@@ -769,7 +849,7 @@
   }
   
   .page .label-text {
-    color: #000000;
+    color: #303030;
     font-family: "Roboto-Regular", Helvetica;
     font-size: 12px;
     font-weight: 400;
@@ -803,7 +883,8 @@
   }
 
   .ref-link {
-    color: #000000;
+    color: #303030;
+    font-family: "Emporia-Roman";
   }
   
   .page .ava-2 {
@@ -823,11 +904,29 @@
     position: relative;
   }
   
-  .page .title-4 {
+  .page .title-4-avatar {
     align-self: stretch;
-    color: #000000;
+    color: #303030;
     display: block;
-    font-family: "Roboto-Medium", Helvetica;
+    font-family: "Emporia-Roman";
+    font-size: 14px;
+    font-weight: 500;
+    height: 20px;
+    letter-spacing: 0;
+    line-height: 30px;
+    margin-top: -1px;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .page .title-4-calculator {
+    align-self: stretch;
+    color: #303030;
+    display: block;
+    font-family: "Emporia-Roman";
     font-size: 18px;
     font-weight: 500;
     height: 20px;
@@ -852,7 +951,7 @@
   .page .icon {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
-    color: #000000;
+    color: #303030;
     display: -webkit-box;
     font-family: "Roboto-Regular", Helvetica;
     font-size: 16px;
@@ -872,9 +971,9 @@
   .page .subtitle {
     align-self: stretch;
     color: #00000080;
-    font-family: "Roboto-Regular", Helvetica;
-    font-size: 14px;
-    font-weight: 400;
+    font-family: "Emporia-Roman";
+    font-size: 20px;
+    font-weight: 500;
     letter-spacing: 0;
     line-height: 20px;
     position: relative;
@@ -883,18 +982,30 @@
   .page .subtitle-calculator {
     align-self: stretch;
     color: #00000080;
-    font-family: "Roboto-Regular", Helvetica;
-    font-size: 12px;
+    font-family: "Emporia-Roman";
+    font-size: 14px;
     font-weight: 400;
     letter-spacing: 0;
     line-height: 20px;
     position: relative;
   }
 
+  .page .subtitle-calculator-a {
+    align-self: stretch;
+    color: #00000080;
+    font-family: "Emporia-Roman";
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 20px;
+    position: relative;
+    margin-left: 5px;
+  }
+
   .page .subtitle-macro {
     align-self: stretch;
     color: #00000080;
-    font-family: "Roboto-Regular", Helvetica;
+    font-family: "Emporia-Roman";
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0;
@@ -978,6 +1089,7 @@
     flex: 0 0 auto;
     position: relative;
     width: 100%;
+    font-family: "Emporia-Roman";
   }
   
   .page .selection-2 {
@@ -1061,6 +1173,7 @@
     justify-content: center;
     padding: 8px;
     position: relative;
+   
   }
   
   .page .vector-2 {
@@ -1128,16 +1241,7 @@
     width: 100%;
   }
 
-  .page .subtitle-calculator {
-    align-self: stretch;
-    color: #00000080;
-    font-family: "Roboto-Regular", Helvetica;
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 0;
-    line-height: 20px;
-    position: relative;
-  }
+
   
   .page .post {
     align-items: center;
@@ -1231,7 +1335,7 @@
 
   .page .p-text-wrapper {
     align-self: stretch;
-    color: #000000;
+    color: #303030;
     font-family: "Roboto-Regular", Helvetica;
     font-size: 16px;
     font-weight: 400;
@@ -1338,7 +1442,7 @@
 
   .page .title-12 {
     color: #000000;
-    font-family: "Roboto-Medium", Helvetica;
+    font-family: "Hakuna-Sans";
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0;

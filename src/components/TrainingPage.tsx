@@ -627,13 +627,11 @@ class TrainingPage extends Component {
           </div>
         </div>
 
-        <div className="section">
-          <div className="container">
-            <div className="container-wrapper">
-              <div className="container-3">
-                <p className="title-1">HelpAbby © 2024. All rights reserved.</p>
-              </div>
-            </div>
+        <div className="container-wrapper">
+          <div className="container-3">
+            <p className="title-footer">
+              HelpAbby © 2024. All rights reserved.
+            </p>
           </div>
         </div>
       </div>
