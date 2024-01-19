@@ -577,6 +577,39 @@ class TrainingPage extends Component {
             </ul>
           </div>
         </div>
+        <div className="section">
+          <div className="container">
+            <div className="div-quiz">
+              <p className="title-13">QUICK QUIZ</p>
+              <p className="title-13">
+                Abby love to see the nature. But she doesn't like something too
+                high impact or energy draining. What kind of cardio exercises
+                suits her the best?
+              </p>
+              <p
+                className="subtitle-calculator"
+                style={{ textAlign: "center", fontSize: "15px" }}
+              >
+                (You can select more than one)
+              </p>
+              <div className="div-form">
+                <div className="button-eat-container">
+                  <button className="button-boolean-left">
+                    <div className="secondary-boolean">
+                      <div className="title-3">TRUE</div>
+                    </div>
+                  </button>
+
+                  <button className="button-boolean-right">
+                    <div className="secondary-boolean">
+                      <div className="title-3">FALSE</div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div className="section">
           <div className="container">

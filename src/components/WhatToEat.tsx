@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./WhatToEat.css";
+import "../style.css";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
 
@@ -18,12 +18,12 @@ function WhatToEat(props: FoodProps) {
     <div className="page">
       <div className="section">
         <div className="container">
-          <div className="subtitle">
-            <Link to="/food" className="subtitle">
+          <div>
+            <Link to="/food" className="title-9">
               ⬅️Back to Food
             </Link>
           </div>
-          <div className="title-page">Weight Loss Meal Plan</div>
+          <div className="text-wrapper-title">Weight Loss Meal Plan</div>
           <p className="title-13">
             Here is an example of a weight loss meal plan for 1700 calories for
             Abby.
@@ -33,7 +33,6 @@ function WhatToEat(props: FoodProps) {
 
       <div className="section">
         <div className="container">
-          <div className="title-14">Recommended Meals</div>
           <div className="list">
             <div className="row">
               <div className="article">
@@ -45,12 +44,6 @@ function WhatToEat(props: FoodProps) {
                     <li>Whole wheat bread (50g) 131kcal</li>
                     <li>Saus sambal ABC (20g) 62kkal</li>
                   </ul>
-
-                  <div className="selection">
-                    <div className="label-normal">
-                      <div className="label-text">Healthy Food</div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -64,12 +57,6 @@ function WhatToEat(props: FoodProps) {
                     <li>Grilled chicken breast (100g) 131kcal</li>
                     <li>Stir fry bokchoy (little bit of oil) (50g) 102kkal</li>
                   </ul>
-
-                  <div className="selection">
-                    <div className="label-normal">
-                      <div className="label-text">Healthy Food</div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -83,11 +70,6 @@ function WhatToEat(props: FoodProps) {
                     <li>White fish fillet, raw (150g) 258kcal</li>
                     <li>Stir fry broccoli (little bit of oil) (85g) 144kkal</li>
                   </ul>
-                  <div className="selection">
-                    <div className="label-normal">
-                      <div className="label-text">Healthy Food</div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -101,11 +83,6 @@ function WhatToEat(props: FoodProps) {
                     <li>Whey protein powder (30g) 120kcal</li>
                     <li>Granola (30g) 139kcal</li>
                   </ul>
-                  <div className="selection">
-                    <div className="label-normal">
-                      <div className="label-text">Healthy Food</div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>

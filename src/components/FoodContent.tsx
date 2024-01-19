@@ -262,7 +262,13 @@ function FoodContent() {
                   onClick={() => handleTrueClick()}
                   disabled={isTrue == true || isFalse == true ? true : false}
                 >
-                  <div className="secondary-boolean">
+                  <div
+                    className="secondary-boolean"
+                    style={{
+                      backgroundColor: isTrue ? "#77DD77" : "",
+                      color: isTrue ? "white" : "",
+                    }}
+                  >
                     <div className="title-3">TRUE</div>
                   </div>
                 </button>
@@ -272,7 +278,13 @@ function FoodContent() {
                   onClick={() => handleFalseClick()}
                   disabled={isTrue == true || isFalse == true ? true : false}
                 >
-                  <div className="secondary-boolean">
+                  <div
+                    className="secondary-boolean"
+                    style={{
+                      backgroundColor: isFalse ? "#FF6961" : "",
+                      color: isFalse ? "white" : "",
+                    }}
+                  >
                     <div className="title-3">FALSE</div>
                   </div>
                 </button>

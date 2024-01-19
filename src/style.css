@@ -110,8 +110,7 @@
     padding: 60px 170px;
     position: relative;
     width: 100%;
-    background-color: aliceblue;
-    
+    background-color: #F8F7F3
   }
 
   /*EDIT THIS*/
@@ -400,6 +399,13 @@
     position: relative;
     width: 200px;
     padding: 20px;
+  }
+
+  .input-nutritional-value {
+    width: 250px;
+    padding: 5px;
+    border-radius: 5px;
+ 
   }
 
   .page .secondary {
@@ -818,11 +824,9 @@
   }
   
   .page .title-4 {
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
     align-self: stretch;
     color: #000000;
-    display: -webkit-box;
+    display: block;
     font-family: "Roboto-Medium", Helvetica;
     font-size: 18px;
     font-weight: 500;
@@ -830,10 +834,11 @@
     letter-spacing: 0;
     line-height: 30px;
     margin-top: -1px;
-    overflow: hidden;
     position: relative;
     text-overflow: ellipsis;
     white-space: nowrap;
+    margin-bottom: 10px;
+    width: 100%;
   }
   
   .page .icon-buttons {

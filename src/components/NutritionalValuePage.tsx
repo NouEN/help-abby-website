@@ -13,7 +13,7 @@ interface Food {
   carbs: number;
   protein: number;
   fat: number;
-  source: string;
+  category: string;
 }
 
 function NutritionalValuePage() {
@@ -65,22 +65,37 @@ function NutritionalValuePage() {
             type="text"
             value={filterStr}
             onChange={(e) => setFilterStr(e.target.value)}
+            placeholder="Search food name.."
+            className="input-nutritional-value"
           />
           <div className="list">
-            {foodListSliced.map((food: Food, index) => (
-              <div className="row">
-                <div className="article">
-                  <div className="frame">
-                    <div className="icon">⭐</div>
-                    <div className="title-3">{food.foodName}</div>
-                    <div className="subtitle"> {food.calories} kcal (100g)</div>
-                    <div className="div">Carbs: {food.carbs}g </div>
-                    <div className="div">Protein: {food.protein}g </div>
-                    <div className="div">Fats: {food.fat}g </div>
+            {foodList
+              .filter(function filterFood(food: Food) {
+                if (filterStr === "") {
+                  return foodList;
+                }
+                return food.foodName
+                  .toLowerCase()
+                  .includes(filterStr.toLowerCase());
+              })
+              .map((food: Food, index) => (
+                <div className="row">
+                  <div className="article">
+                    <div className="frame">
+                      <div className="icon">⭐</div>
+                      <div className="title-3">{food.foodName}</div>
+                      <div className="div">{food.category}</div>
+                      <div className="subtitle">
+                        {" "}
+                        {food.calories} kcal (100g)
+                      </div>
+                      <div className="div">Carbs: {food.carbs}g </div>
+                      <div className="div">Protein: {food.protein}g </div>
+                      <div className="div">Fats: {food.fat}g </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
           </div>
           <div>
             <ReactPaginate
