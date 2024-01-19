@@ -21,6 +21,8 @@ function FoodContent() {
   const [tdee, setTdee] = useState(0);
   const [calculated, setCalculated] = useState(false);
   const [count, setCount] = useState(0);
+  const [isTrue, setisTrue] = useState(false);
+  const [isFalse, setisFalse] = useState(false);
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -47,6 +49,14 @@ function FoodContent() {
     setBmr(0);
     setTdee(0);
     window.location.reload();
+  };
+
+  const handleTrueClick = async () => {
+    setisTrue(true);
+  };
+
+  const handleFalseClick = async () => {
+    setisFalse(true);
   };
 
   return (
@@ -233,9 +243,80 @@ function FoodContent() {
             <div className="div-desc">
               Now we know what her BMR and TDEE calories is. To lose weight, we
               should eat at 200 - 500 less than our TDEE calories and DON'T go
-              below the BMR calories. Let's find out what Abby can eat in that
-              range of calories.
+              below the BMR calories.
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="section">
+        <div className="container">
+          <div className="div-quiz">
+            <p className="title-13">QUICK QUIZ</p>
+            <p className="title-13">
+              Abby should eat around 1728 kcal for her to lose weight.
+            </p>
+            <div className="div-form">
+              <div className="button-eat-container">
+                <button
+                  className="button-boolean-left"
+                  onClick={() => handleTrueClick()}
+                  disabled={isTrue == true || isFalse == true ? true : false}
+                >
+                  <div className="secondary-boolean">
+                    <div className="title-3">TRUE</div>
+                  </div>
+                </button>
+
+                <button
+                  className="button-boolean-right"
+                  onClick={() => handleFalseClick()}
+                  disabled={isTrue == true || isFalse == true ? true : false}
+                >
+                  <div className="secondary-boolean">
+                    <div className="title-3">FALSE</div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="section" hidden={isTrue == true ? false : true}>
+        <div className="container">
+          <div className="div">
+            <p className="title" style={{ color: "green" }}>
+              Correct!
+            </p>
+            <p className="div-desc">
+              1928 - 200 is 1728. So her deficit calories is around 1700
+              calories.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="section" hidden={isFalse == true ? false : true}>
+        <div className="container">
+          <div className="div">
+            <p className="title" style={{ color: "red" }}>
+              Wrong!
+            </p>
+            <p className="div-desc">
+              1928 - 200 is 1728. So her deficit calories is around 1700
+              calories.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        className="section"
+        hidden={isFalse == true || isTrue == true ? false : true}
+      >
+        <div className="container">
+          <div className="div">
+            <p className="div-desc">
+              Now let's see what can we eat in those calories.
+            </p>
             <div className="button-eat-container">
               <Link to="/whattoeat">
                 <button className="button btn-eat">
@@ -393,7 +474,7 @@ function FoodContent() {
             <div className="button-eat-container">
               <Link to="/food/foodlist">
                 <button className="btn-eat">
-                  <div className="primary">
+                  <div className="primary-other">
                     <div className="title-2">List of Nutritional Value</div>
                   </div>
                 </button>
