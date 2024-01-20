@@ -15,9 +15,13 @@
 
 @font-face {
   font-family: 'Comforta';
-  src: local('fonts'), url(./assets/fonts/Comfortaa-Thin.ttf) format('trueype');
+  src: local('fonts'), url(./assets/fonts/Comfortaa-Thin.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: 'Questrial';
+  src: local('fonts'), url(./assets/fonts/Questrial-Regular.ttf) format('truetype');
+}
 
 
 .page {
@@ -75,10 +79,45 @@
     position: relative;
   }
 
-  .page .title-footer {
+  .page .title-food {
     color: #303030;
     flex: 1;
     font-family: "Emporia-Roman";
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 36px;
+    position: relative;
+  }
+
+  .title-nav {
+    color: #303030;
+    flex: 1;
+    font-family: "Emporia-Roman";
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 36px;
+    position: relative;
+  }
+
+  .page .myth-desc {
+    color: #303030;
+    flex: 1;
+    font-family: "Emporia-Roman";
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 36px;
+    position: relative;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  .page .title-footer {
+    color: #303030;
+    flex: 1;
+    font-family: "Questrial";
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 0;
@@ -118,7 +157,7 @@
   
   .nav-item {
     color: #F8F7F3;
-    font-family: "Emporia-Roman";
+    font-family: "Hakuna-Sans";
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0;
@@ -132,6 +171,7 @@
 
   .nav-link {
     font-size: 20px;
+    font-weight: 10px;
   }
   
   .page .section {
@@ -182,13 +222,27 @@
     flex-grow: 1;
     gap: 24px;
     position: relative;
+    
   }
   
   .page .text-wrapper {
     align-self: stretch;
-    color: #303030;
+    color: #E89DA7;
     font-family: "Emporia-Roman";
     font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 48px;
+    margin-top: -1px;
+    position: relative;
+    top: 20px;
+  }
+
+  .page .text-wrapper-myth {
+    align-self: stretch;
+    color: #303030;
+    font-family: "Emporia-Roman";
+    font-size: 35px;
     font-weight: 700;
     letter-spacing: 0;
     line-height: 48px;
@@ -211,7 +265,7 @@
 
   .page .text-wrapper-title {
     align-self: stretch;
-    color: #303030;
+    color: #E89DA7;
     font-family: "Emporia-Roman";
     font-size: 40px;
     font-weight: 700;
@@ -274,14 +328,45 @@
   .page .div {
     align-self: stretch;
     color: #303030;
-    font-family: "Emporia-Roman";
+    font-family: "Questrial";
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+    position: relative;
+    justify-content: right;
+    text-align: justify;
+ 
+  }
+
+  .div-ref {
+    align-self: stretch;
+    color: #303030;
+    font-family: "Questrial";
     font-size: 18px;
     font-weight: 100;
     letter-spacing: 0;
     line-height: 30px;
     position: relative;
     justify-content: right;
+    top: 10px;
+    width: 120px;
   }
+
+  .div-text {
+    align-self: stretch;
+    color: #303030;
+    font-family: "Questrial";
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+    position: relative;
+    justify-content: right;
+    text-align: justify;
+    top: 10px;
+  }
+
 
   .page .div-fact {
     margin-top: 20px;
@@ -299,16 +384,17 @@
   .page .div-quiz {
     align-self: stretch;
     color: #303030;
-    font-family: "Roboto-Regular", Helvetica;
+    font-family: "Hakuna-Sans";
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0;
     line-height: 24px;
     position: relative;
     justify-content: right;
-    border: 1px black solid;
+    border: 1px #F3D2D7 solid;
     border-radius: 20px;
     padding: 25px;
+    background-color: #F3D2D7;
   }
 
   .page .div-myth {
@@ -321,28 +407,84 @@
     position: relative;
   }
 
-
-  .page .title-myth {
+  .page .title-nutrition-1 {
     align-self: stretch;
-    color: #303030;
-    font-family: "Roboto-Bold", Helvetica;
+    color: #685656;
+    font-family: "Emporia-Roman";
     font-size: 40px;
     font-weight: 700;
     letter-spacing: 0;
     line-height: 48px;
     margin-top: -1px;
     position: relative;
+    top: 20px;
   }
 
-  .page .div-desc {
+  .page .title-nutrition-2 {
+    align-self: stretch;
+    color: #685656;
+    font-family: "Emporia-Roman";
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 48px;
+    margin-top: -1px;
+    position: relative;
+    top: 20px;
+  }
+
+  .page .title-nutrition-3 {
+    align-self: stretch;
+    color: #685656;
+    font-family: "Emporia-Roman";
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 28px;
+    margin-top: -1px;
+    position: relative;
+  }
+
+  .div-desc {
     align-self: stretch;
     color: #303030;
-    font-family: "Emporia-Roman";
-    font-size: 18px;
+    font-family: "Questrial";
+    font-size: 20px;
     font-weight: 400;
     letter-spacing: 0;
-    line-height: 24px;
+    line-height: 30px;
     position: relative;
+    margin-top: 10px;
+    text-align: justify;
+  }
+
+  .div-desc-other {
+    align-self: stretch;
+    color: #303030;
+    font-family: "Questrial";
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: relative;
+    top: 30px;
+  }
+
+  .div-desc-what-to-eat {
+    align-self: stretch;
+    color: #303030;
+    font-family: "Questrial";
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 35px;
+    position: relative;
+    list-style: inside;
+    
+  }
+
+  .page .list-what-to-eat{
+    bottom: 300px;
   }
 
   .page .div-form {
@@ -421,7 +563,7 @@
   justify-content: center;
   padding: 50px;
   }
-  
+
   .page .primary {
     align-items: center;
     background-color: #000000;
@@ -461,6 +603,20 @@
     width: 300px;
   }
 
+  .page .primary-green-large {
+    align-items: center;
+    background-color: #A1B18B;
+    border-radius: 8px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px;
+    position: relative;
+    width: 300px;
+    height: 80px;
+  }
+
   .input-nutritional-value {
     width: 250px;
     padding: 5px;
@@ -475,7 +631,7 @@
   .page .secondary {
     align-items: center;
     border: 1px solid;
-    border-color: #000000;
+    border-color: #BA9898;
     border-radius: 8px;
     display: flex;
     flex: 0 0 auto;
@@ -503,10 +659,10 @@
 
   
   .page .title-2 {
-    color: #ffffff;
+    color: #f6f6f6;
     font-family: "Hakuna-Sans";
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 10px;
     letter-spacing: 0;
     line-height: 24px;
     margin-top: -1px;
@@ -606,8 +762,8 @@
     height: 1140px;
     padding: 20px 0px;
     position: relative;
-    background-color: lightblue;
-    border-radius: 20px;
+    background-color: #F8F7F3;
+    border-radius: 30px;
     
   }
 
@@ -629,11 +785,26 @@
     display: flex;
     flex: 0 0 auto;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
     justify-content: center;
     padding: 20px 0px;
     position: relative;
     width: 100%;
+    bottom: 20px;
+  }
+
+  .what-to-eat-list {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px 0px;
+    position: relative;
+    width: 100%;
+    bottom: 80px;
   }
   
   .page .list-myth {
@@ -728,10 +899,10 @@
   }
   
   .calculator{
-    border: 1px solid;
+    border: 2px solid;
     border-color: #0000001a;
     border-radius: 6px;
-    padding: 12px;
+    padding: 15px;
   }
   .page .row {
     align-items: center;
@@ -755,7 +926,22 @@
     justify-content: center;
     padding: 16px;
     position: relative;
-    background-color: #F2C6CD
+    background-color: #F3D2D7
+  }
+
+   .article-what-to-eat {
+    align-items: flex-start;
+    border: 1px solid;
+    border-color: #0000001a;
+    border-radius: 6px;
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
+    gap: 16px;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    background-color: #F3D2D7
   }
 
   .article-nutrition {
@@ -812,11 +998,11 @@
   
   .page .title-3 {
     align-self: stretch;
-    color: #303030;
+    color: #685656;
     font-family: "Emporia-Roman";
-    font-size: 20px;
-    font-weight: 550;
-    letter-spacing: 0;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
     line-height: 28px;
     margin-top: -1px;
     position: relative;
@@ -835,7 +1021,7 @@
   
   .page .label-normal {
     align-items: center;
-    background-color: #d8d8d880;
+    background-color: #f6f6f6;
     border: 0.5px solid;
     border-color: #0000001a;
     border-radius: 2px;
@@ -849,8 +1035,8 @@
   }
   
   .page .label-text {
-    color: #303030;
-    font-family: "Roboto-Regular", Helvetica;
+    color: #F0A7B2;
+    font-family: "Hakuna-Sans";
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 0;
@@ -859,6 +1045,7 @@
     position: relative;
     white-space: nowrap;
     width: fit-content;
+  
   }
   
   .page .user {
@@ -884,7 +1071,7 @@
 
   .ref-link {
     color: #303030;
-    font-family: "Emporia-Roman";
+    font-family: "Questrial";
   }
   
   .page .ava-2 {
@@ -908,11 +1095,11 @@
     align-self: stretch;
     color: #303030;
     display: block;
-    font-family: "Emporia-Roman";
+    font-family: "Questrial";
     font-size: 14px;
     font-weight: 500;
     height: 20px;
-    letter-spacing: 0;
+    letter-spacing: 0.5px;
     line-height: 30px;
     margin-top: -1px;
     position: relative;
@@ -971,7 +1158,7 @@
   .page .subtitle {
     align-self: stretch;
     color: #00000080;
-    font-family: "Emporia-Roman";
+    font-family: "Questrial";
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 0;
@@ -979,7 +1166,30 @@
     position: relative;
   }
 
+  .subtitle-what-to-eat {
+    align-self: stretch;
+    color: #00000080;
+    font-family: "Questrial";
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 20px;
+    position: relative;
+    top: 5px;
+  }
+
   .page .subtitle-calculator {
+    align-self: stretch;
+    color: #00000080;
+    font-family: "Questrial";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 20px;
+    position: relative;
+  }
+
+  .page .subtitle-myth {
     align-self: stretch;
     color: #00000080;
     font-family: "Emporia-Roman";
@@ -988,6 +1198,7 @@
     letter-spacing: 0;
     line-height: 20px;
     position: relative;
+    margin-top: 20px;
   }
 
   .page .subtitle-calculator-a {
@@ -1006,9 +1217,9 @@
     align-self: stretch;
     color: #00000080;
     font-family: "Emporia-Roman";
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
-    letter-spacing: 0;
+    letter-spacing: 0.3px;
     line-height: 20px;
     position: relative;
   }
@@ -1069,7 +1280,7 @@
     align-self: stretch;
     background: transparent;
     border: none;
-    color: #000000;
+    color: #303030;
     font-family: "Roboto-Medium", Helvetica;
     font-size: 14px;
     font-weight: 500;
@@ -1084,12 +1295,13 @@
     align-self: stretch;
     background-color: #ffffff;
     border: 1px solid;
+    padding: 10px;
     border-color: #0000001a;
     border-radius: 6px;
     flex: 0 0 auto;
     position: relative;
     width: 100%;
-    font-family: "Emporia-Roman";
+    font-family: "Questrial";
   }
   
   .page .selection-2 {
@@ -1105,7 +1317,7 @@
   
   .page .title-6 {
     align-self: stretch;
-    color: #000000;
+    color: #303030;
     font-family: "Roboto-Medium", Helvetica;
     font-size: 14px;
     font-weight: 500;
@@ -1138,7 +1350,7 @@
   }
   
   .page .text {
-    color: #000000;
+    color: #303030;
     font-family: "Roboto-Regular", Helvetica;
     font-size: 14px;
     font-weight: 400;
@@ -1336,7 +1548,7 @@
   .page .p-text-wrapper {
     align-self: stretch;
     color: #303030;
-    font-family: "Roboto-Regular", Helvetica;
+    font-family: "Emporia-Roman";
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0;
@@ -1401,9 +1613,23 @@
   .page .title-9 {
     align-self: stretch;
     color: #000000;
-    font-family: "Roboto-Regular", Helvetica;
+    font-family: "Emporia-Roman";
     font-size: 20px;
     font-weight: 400;
+    letter-spacing: 0;
+    line-height: 28px;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+    width: 332px;
+  }
+
+  .page .title-9-what-to-eat {
+    align-self: stretch;
+    color: #303030;
+    font-family: "Questrial";
+    font-size: 20px;
+    font-weight: 300;
     letter-spacing: 0;
     line-height: 28px;
     margin-top: -1px;
@@ -1441,7 +1667,7 @@
   }
 
   .page .title-12 {
-    color: #000000;
+    color: #BA9898;
     font-family: "Hakuna-Sans";
     font-size: 16px;
     font-weight: 500;
@@ -1455,10 +1681,23 @@
 
   .page .title-13 {
     align-self: stretch;
-    color: #000000;
-    font-family: "Roboto-Medium", Helvetica;
+    color: #E89DA7;
+    font-family: "Hakuna-Sans";
     font-size: 20px;
     font-weight: 700;
+    letter-spacing: 0;
+    line-height: 28px;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+  }
+
+  .page .title-13-what-to-eat {
+    align-self: stretch;
+    color: #303030;
+    font-family: "Questrial";
+    font-size: 20px;
+    font-weight: 300;
     letter-spacing: 0;
     line-height: 28px;
     margin-top: -1px;

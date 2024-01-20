@@ -6,10 +6,19 @@ import "../style.css";
 function Navbar() {
   return (
     <div className="navbar-top">
-      <img src="src\assets\images\logo.png" className="rectangle" />
-      <div className="title" style={{ color: "#F8F7F3" }}>
+      <Link to="/" className="nav-link" aria-current="page">
+        <img src="src\assets\images\logo.png" className="rectangle" />
+      </Link>
+      <Link
+        to="/"
+        className="title-nav"
+        aria-current="page"
+        style={{ color: "#F8F7F3", textDecoration: "none" }}
+      >
+        {" "}
         HelpAbby
-      </div>
+      </Link>
+
       <ul className="navbar-options">
         <li className="nav-item">
           <Link to="/" className="nav-link" aria-current="page">

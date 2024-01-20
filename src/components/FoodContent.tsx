@@ -64,7 +64,9 @@ function FoodContent() {
       <Navbar></Navbar>
       <div className="section">
         <div className="container">
-          <div className="text-wrapper">Food</div>
+          <div className="title-nutrition-1" style={{ color: "#685656" }}>
+            Food
+          </div>
           <p className="div-desc">
             The first key to achieving the healthy body is through your food.
             Food is an essential part in our life to get the energy to get
@@ -84,7 +86,14 @@ function FoodContent() {
             calories is?
           </p>
 
-          <p className="div-desc" style={{ color: "orange" }}>
+          <p
+            className="div-desc"
+            style={{
+              color: "#BA9898",
+              fontWeight: "550px",
+              textDecoration: "underline",
+            }}
+          >
             (Hint : Use the calorie calculator below!)
           </p>
 
@@ -147,42 +156,54 @@ function FoodContent() {
               <div className="div-form">
                 <label className="title-4-calculator">Activity Level</label>
                 <div className="chip-group textfield">
-                  <div className="chip-2">
+                  <div
+                    className="chip-2"
+                    style={{ backgroundColor: "#BA9898" }}
+                  >
                     <button
                       type="button"
                       className="div btn btn-secondary"
-                      style={{ backgroundColor: "#BA9898" }}
+                      style={{ backgroundColor: "#BA9898", border: "none" }}
                       onClick={() => setActivityLevel("Sedentary")}
                     >
                       Sedentary{" "}
                     </button>
                   </div>
-                  <div className="chip-2">
+                  <div
+                    className="chip-2"
+                    style={{ backgroundColor: "#BA9898" }}
+                  >
                     <button
                       type="button"
                       className="div btn btn-secondary"
-                      style={{ backgroundColor: "#BA9898" }}
+                      style={{ backgroundColor: "#BA9898", border: "none" }}
                       onClick={() => setActivityLevel("Lightly Active")}
                     >
                       Lightly Active{" "}
                     </button>
                   </div>
 
-                  <div className="chip-2">
+                  <div
+                    className="chip-2"
+                    style={{ backgroundColor: "#BA9898" }}
+                  >
                     <button
                       type="button"
                       className="div btn btn-secondary"
-                      style={{ backgroundColor: "#BA9898" }}
+                      style={{ backgroundColor: "#BA9898", border: "none" }}
                       onClick={() => setActivityLevel("Moderately Active")}
                     >
                       Moderately Active{" "}
                     </button>
                   </div>
-                  <div className="chip-2">
+                  <div
+                    className="chip-2"
+                    style={{ backgroundColor: "#BA9898" }}
+                  >
                     <button
                       type="button"
                       className="div btn btn-secondary"
-                      style={{ backgroundColor: "#BA9898" }}
+                      style={{ backgroundColor: "#BA9898", border: "none" }}
                       onClick={() => setActivityLevel("Very Active")}
                     >
                       Very Active{" "}
@@ -301,10 +322,10 @@ function FoodContent() {
       <div className="section" hidden={isTrue == true ? false : true}>
         <div className="container">
           <div className="div">
-            <p className="title" style={{ color: "green" }}>
+            <p className="title-nutrition-2" style={{ color: "green" }}>
               Correct!
             </p>
-            <p className="div-desc">
+            <p className="div-desc" style={{ top: "10px" }}>
               1928 - 200 is 1728. So her deficit calories is around 1700
               calories.
             </p>
@@ -348,7 +369,7 @@ function FoodContent() {
 
       <div className="section">
         <div className="container">
-          <div className="title">Macronutrients</div>
+          <div className="title-nutrition-2">Macronutrients</div>
           <p className="div-desc">
             Learn about the three essential macronutrients
           </p>
@@ -363,7 +384,7 @@ function FoodContent() {
                   ></img>
                 </div>
                 <div className="frame">
-                  <div className="title-3">Carbohydrates</div>
+                  <div className="title-nutrition-3">Carbohydrates</div>
                   <div className="subtitle-macro">Primary source of energy</div>
                   <p className="div-desc">
                     Carbohydrates provide the body with energy for daily
@@ -403,7 +424,7 @@ function FoodContent() {
                   ></img>
                 </div>
                 <div className="frame">
-                  <div className="title-3">Protein</div>
+                  <div className="title-nutrition-3">Protein</div>
                   <div className="subtitle-macro">
                     Building Blocks for Growth and Repair
                   </div>
@@ -445,7 +466,7 @@ function FoodContent() {
                   ></img>
                 </div>
                 <div className="frame">
-                  <div className="title-3">Fats</div>
+                  <div className="title-nutrition-3">Fats</div>
                   <div className="subtitle-macro">
                     Energy Storage and Insulation
                   </div>
@@ -483,9 +504,12 @@ function FoodContent() {
       <div className="section">
         <div className="container">
           <div className="div">
-            <div className="title">Ohoho! You're getting smarter now, eh?</div>
-            <p className="div">
-              Curious to find out more about food nutritional value?
+            <div className="title-nutrition-2">
+              Ohoho! You're getting smarter now, eh? 👀
+            </div>
+            <p className="div-desc-other">
+              Click the button below if you want to find out more about food
+              nutritional value.
             </p>
             <div className="button-eat-container">
               <Link to="/food/foodlist">
@@ -503,12 +527,14 @@ function FoodContent() {
       <div className="section">
         <div className="container">
           <div className="div">
-            <p className="title">Or ready to get into the next step?</p>
+            <p className="title-nutrition-2">
+              Or ready to get into the next step?
+            </p>
             <div className="button-eat-container">
               <Link to="/training">
                 <button className="button btn-eat">
-                  <div className="secondary">
-                    <div className="title-3">Go to Training➡️ </div>
+                  <div className="primary-green-large">
+                    <div className="title-2">Go to Training➡️ </div>
                   </div>
                 </button>
               </Link>
@@ -520,7 +546,9 @@ function FoodContent() {
         <div className="container">
           <div className="container-wrapper">
             <div className="container-3">
-              <p className="title-1">HelpAbby © 2024. All rights reserved.</p>
+              <p className="title-footer">
+                HelpAbby © 2024. All rights reserved.
+              </p>
             </div>
           </div>
         </div>

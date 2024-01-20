@@ -22,7 +22,7 @@ class HomeContent extends Component {
               </Link>
             </div>
             <div className="text-wrapper">Help Abby Get Healthy!</div>
-            <p className="div">
+            <p className="div-text">
               Join Abby&#39;s journey to overcome her weight issues and adopt a
               healthy lifestyle.
             </p>
@@ -44,7 +44,7 @@ class HomeContent extends Component {
           </div>
           <div className="container">
             <div className="text-wrapper">Meet Abby</div>
-            <p className="div">
+            <p className="div-text">
               Abby is a cheerful little girl who loves to eat junk food and play
               games. However, her love for unhealthy snacks has led to weight
               gain.
@@ -60,7 +60,7 @@ class HomeContent extends Component {
                   </div>
                   <div className="frame">
                     <div className="title-3">Abby&#39;s Favorite Foods</div>
-                    <p className="div">
+                    <p className="div-text">
                       Abby enjoys burgers, pizza, ice cream, and soda. These
                       foods are tasty, but they are not good for her health.
                     </p>
@@ -81,23 +81,25 @@ class HomeContent extends Component {
                       </div>
                     </div>
                   </div>
-                  <p className="subtitle-calculator">
-                    <a
-                      href="https://iconscout.com/3d-illustrations/pizza"
-                      className="ref-link"
-                      target="_blank"
-                    >
-                      Pizza
-                    </a>{" "}
-                    by{" "}
-                    <a
-                      href="https://iconscout.com/contributors/morpvin"
-                      className="ref-link"
-                      target="_blank"
-                    >
-                      Voxnoru
-                    </a>
-                  </p>
+                  <div className="div-ref">
+                    <p className="subtitle-calculator">
+                      <a
+                        href="https://iconscout.com/3d-illustrations/pizza"
+                        className="ref-link"
+                        target="_blank"
+                      >
+                        Pizza
+                      </a>{" "}
+                      by{" "}
+                      <a
+                        href="https://iconscout.com/contributors/morpvin"
+                        className="ref-link"
+                        target="_blank"
+                      >
+                        Voxnoru
+                      </a>
+                    </p>
+                  </div>
                 </div>
               </div>
               <div className="row">
@@ -110,7 +112,7 @@ class HomeContent extends Component {
                   </div>
                   <div className="frame">
                     <div className="title-3">Reality Check</div>
-                    <p className="div">
+                    <p className="div-text">
                       During a school check-up, Abby was shocked to learn that
                       she is considered overweight by her doctor. It&#39;s time
                       for a change!
@@ -135,26 +137,28 @@ class HomeContent extends Component {
                       </div>
                     </div>
                   </div>
-                  <p className="subtitle-calculator">
-                    <a
-                      href="https://iconscout.com/3d-illustrations/scared-mind"
-                      className="ref-link"
-                      target="_blank"
-                    >
-                      Scared Mind
-                    </a>{" "}
-                    by{" "}
-                    <a
-                      href="https://iconscout.com/contributors/flowicon"
-                      className="ref-link"
-                    >
-                      Flowicon
-                    </a>{" "}
-                    on{" "}
-                    <a href="https://iconscout.com" className="ref-link">
-                      IconScout
-                    </a>
-                  </p>
+                  <div className="div-ref">
+                    <p className="subtitle-calculator">
+                      <a
+                        href="https://iconscout.com/3d-illustrations/scared-mind"
+                        className="ref-link"
+                        target="_blank"
+                      >
+                        Scared Mind
+                      </a>{" "}
+                      by{" "}
+                      <a
+                        href="https://iconscout.com/contributors/flowicon"
+                        className="ref-link"
+                      >
+                        Flowicon
+                      </a>{" "}
+                      on{" "}
+                      <a href="https://iconscout.com" className="ref-link">
+                        IconScout
+                      </a>
+                    </p>
+                  </div>
                 </div>
               </div>
               <div className="row">
@@ -165,7 +169,7 @@ class HomeContent extends Component {
                   <div className="frame">
                     <div className="title-3">Physical Challenges</div>
 
-                    <p className="div">
+                    <p className="div-text">
                       During a physical education class, Abby struggled to run,
                       felt out of breath, and got dizzy. It&#39;s important for
                       her to improve her fitness level.
@@ -187,26 +191,28 @@ class HomeContent extends Component {
                       </div>
                     </div>
                   </div>
-                  <p className="subtitle-calculator">
-                    <a
-                      href="https://iconscout.com/3d-illustrations/notes"
-                      className="ref-link"
-                      target="_blank"
-                    >
-                      Notes
-                    </a>{" "}
-                    by{" "}
-                    <a
-                      href="https://iconscout.com/contributors/ncrte3d"
-                      className="ref-link"
-                    >
-                      Naufal Imaanullah
-                    </a>{" "}
-                    on{" "}
-                    <a href="https://iconscout.com" className="ref-link">
-                      IconScout
-                    </a>
-                  </p>
+                  <div className="div-ref">
+                    <p className="subtitle-calculator">
+                      <a
+                        href="https://iconscout.com/3d-illustrations/notes"
+                        className="ref-link"
+                        target="_blank"
+                      >
+                        Notes
+                      </a>{" "}
+                      by{" "}
+                      <a
+                        href="https://iconscout.com/contributors/ncrte3d"
+                        className="ref-link"
+                      >
+                        Naufal Imaanullah
+                      </a>{" "}
+                      on{" "}
+                      <a href="https://iconscout.com" className="ref-link">
+                        IconScout
+                      </a>
+                    </p>
+                  </div>
                 </div>
               </div>
               <div className="row">
@@ -216,7 +222,7 @@ class HomeContent extends Component {
                   </div>
                   <div className="frame">
                     <div className="title-3">Feeling Sad</div>
-                    <p className="div">
+                    <p className="div-text">
                       Abby feels sad about her current health and body. But
                       don&#39;t worry, with your help, she can turn things
                       around!
@@ -238,26 +244,28 @@ class HomeContent extends Component {
                       </div>
                     </div>
                   </div>
-                  <p className="subtitle-calculator">
-                    <a
-                      href="https://iconscout.com/3d-illustrations/emoji"
-                      className="ref-link"
-                      target="_blank"
-                    >
-                      Emoji
-                    </a>{" "}
-                    by{" "}
-                    <a
-                      href="https://iconscout.com/contributors/zusma-gotama"
-                      className="ref-link"
-                    >
-                      ZuGo Studio
-                    </a>{" "}
-                    on{" "}
-                    <a href="https://iconscout.com" className="ref-link">
-                      IconScout
-                    </a>
-                  </p>
+                  <div className="div-ref">
+                    <p className="subtitle-calculator">
+                      <a
+                        href="https://iconscout.com/3d-illustrations/emoji"
+                        className="ref-link"
+                        target="_blank"
+                      >
+                        Emoji
+                      </a>{" "}
+                      by{" "}
+                      <a
+                        href="https://iconscout.com/contributors/zusma-gotama"
+                        className="ref-link"
+                      >
+                        ZuGo Studio
+                      </a>{" "}
+                      on{" "}
+                      <a href="https://iconscout.com" className="ref-link">
+                        IconScout
+                      </a>
+                    </p>
+                  </div>
                 </div>
               </div>
               <div className="row">
@@ -267,7 +275,7 @@ class HomeContent extends Component {
                   </div>
                   <div className="frame">
                     <div className="title-3">Getting Motivated</div>
-                    <p className="div">
+                    <p className="div-text">
                       Abby is ready to make a change and start her journey
                       towards a healthier lifestyle. Are you willing to help
                       Abby too?
@@ -289,26 +297,28 @@ class HomeContent extends Component {
                       </div>
                     </div>
                   </div>
-                  <p className="subtitle-calculator">
-                    <a
-                      href="https://iconscout.com/3d-illustrations/solidarity-fist"
-                      className="ref-link"
-                      target="_blank"
-                    >
-                      Solidarity Fist
-                    </a>{" "}
-                    by{" "}
-                    <a
-                      href="https://iconscout.com/contributors/welsonhendra"
-                      className="ref-link"
-                    >
-                      Welson Hendra
-                    </a>{" "}
-                    on{" "}
-                    <a href="https://iconscout.com" className="ref-link">
-                      IconScout
-                    </a>
-                  </p>
+                  <div className="div-ref">
+                    <p className="subtitle-calculator">
+                      <a
+                        href="https://iconscout.com/3d-illustrations/solidarity-fist"
+                        className="ref-link"
+                        target="_blank"
+                      >
+                        Solidarity Fist
+                      </a>{" "}
+                      by{" "}
+                      <a
+                        href="https://iconscout.com/contributors/welsonhendra"
+                        className="ref-link"
+                      >
+                        Welson Hendra
+                      </a>{" "}
+                      on{" "}
+                      <a href="https://iconscout.com" className="ref-link">
+                        IconScout
+                      </a>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

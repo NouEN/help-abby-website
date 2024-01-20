@@ -14,6 +14,7 @@ type Myth = {
 
 function MythPage() {
   const [mythList, setMythList] = useState([]);
+  const [mythClicked, setMythClicked] = useState(false);
 
   useEffect(() => {
     fetchData();
@@ -26,13 +27,17 @@ function MythPage() {
     console.log(mythList);
     console.log(response.data);
   };
+
+  const handleMythClicked = async () => {
+    setMythClicked(true);
+  };
   return (
     <div className="page">
       <Navbar></Navbar>
       <div className="section">
         <div className="container">
           <div className="text-wrapper-title">Myths and Facts</div>
-          <div className="p-text-wrapper">
+          <div className="title-13-what-to-eat">
             Dispelling common misconceptions about health and fitness
           </div>
         </div>
@@ -41,21 +46,29 @@ function MythPage() {
       {mythList.map((myth: Myth, index) => (
         <div className="section">
           <div className="container">
-            <div className="text-wrapper">Myth #{myth.id}</div>
-            <p className="title">{myth.mythDesc}</p>
+            <div
+              className="text-wrapper-myth"
+              onClick={() => handleMythClicked()}
+            >
+              Myth #{myth.id}
+            </div>
+            <p className="myth-desc">{myth.mythDesc}</p>
           </div>
-          <div className="list-myth">
+          <div
+            className="list-myth"
+            hidden={mythClicked === true ? false : true}
+          >
             <div className="myth-item">
               <div className="myth-div">
-                <div className="text-wrapper">Fact</div>
+                <div className="text-wrapper-myth">Fact</div>
                 <div className="div-fact">{myth.factDesc}</div>
               </div>
-              <p className="subtitle-calculator">{myth.source}</p>
+              <p className="subtitle-myth">Source : {myth.source}</p>
             </div>
           </div>
         </div>
       ))}
-      <div className="">More myths to be debunked coming soon!</div>
+      <div className="title-footer">More myths to be debunked coming soon!</div>
       <div className="container-wrapper">
         <div className="container-3">
           <p className="title-footer">HelpAbby © 2024. All rights reserved.</p>

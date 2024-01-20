@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import "../style.css";
 import ReactPaginate from "react-paginate";
+import { useNavigate } from "react-router-dom";
 
 interface Food {
   foodId: number;
@@ -45,17 +46,18 @@ function NutritionalValuePage() {
   };
 
   const [filterStr, setFilterStr] = useState("");
+  const navigate = useNavigate();
 
   return (
     <div className="page">
       <div className="section">
         <div className="container">
-          <div className="subtitle">
-            <Link to="/food" className="subtitle">
+          <div>
+            <a onClick={() => navigate(-1)} className="title-9">
               ⬅️Back to Food
-            </Link>
+            </a>
           </div>
-          <h1 className="title-page">Nutritional Value of Foods</h1>
+          <h1 className="text-wrapper-title">Nutritional Value of Foods</h1>
         </div>
       </div>
 

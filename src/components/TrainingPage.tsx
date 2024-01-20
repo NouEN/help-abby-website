@@ -12,9 +12,11 @@ class TrainingPage extends Component {
           <div className="container">
             <div className="text-wrapper">Training</div>
             <p className="div-desc">
-              We need to move our body to burn more calories and reach our
-              calorie deficit goals. But what are the types of training that we
-              must do?{" "}
+              Aside from nutrition, training also plays a big role in keeping
+              our health and fitness in a great shape, it's one of the best way
+              to reach holistic physical well-being. Training may aid our weight
+              loss goals in a lot of ways. But what are the types of training
+              that we must do?{" "}
             </p>
           </div>
         </div>
