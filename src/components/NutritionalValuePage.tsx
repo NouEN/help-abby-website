@@ -107,7 +107,6 @@ function NutritionalValuePage() {
                 breakLabel="..."
                 containerClassName="paginate"
                 pageClassName="page-item"
-                activeClassName="active"
                 previousLabel="Prev"
                 previousLinkClassName="prev-label"
                 nextLabel="Next"
