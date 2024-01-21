@@ -4,6 +4,7 @@ import "../style.css";
 import PropTypes from "prop-types";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 type Myth = {
   id: number;
@@ -29,7 +30,7 @@ function MythPage() {
   };
 
   const handleMythClicked = async () => {
-    setMythClicked(true);
+    setMythClicked(!mythClicked);
   };
   return (
     <div className="page">
@@ -40,18 +41,41 @@ function MythPage() {
           <div className="title-13-what-to-eat">
             Dispelling common misconceptions about health and fitness
           </div>
+          <div className="div">
+            <div
+              className="button-eat-container"
+              hidden={mythClicked ? true : false}
+            >
+              <button
+                className="button btn-eat"
+                onClick={() => handleMythClicked()}
+              >
+                <div className="primary-pink-large">
+                  <div className="title-2">Reveal the facts </div>
+                </div>
+              </button>
+            </div>
+            <div
+              className="button-eat-container"
+              hidden={mythClicked ? false : true}
+            >
+              <button
+                className="button btn-eat"
+                onClick={() => handleMythClicked()}
+              >
+                <div className="primary-brown-large">
+                  <div className="title-2">Hide the facts </div>
+                </div>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
       {mythList.map((myth: Myth, index) => (
         <div className="section">
           <div className="container">
-            <div
-              className="text-wrapper-myth"
-              onClick={() => handleMythClicked()}
-            >
-              Myth #{myth.id}
-            </div>
+            <div className="text-wrapper-myth">Myth #{myth.id}</div>
             <p className="myth-desc">{myth.mythDesc}</p>
           </div>
           <div

@@ -91,7 +91,6 @@
   }
 
   .title-nav {
-    color: #303030;
     flex: 1;
     font-family: "Emporia-Roman";
     font-size: 28px;
@@ -99,12 +98,15 @@
     letter-spacing: 0;
     line-height: 36px;
     position: relative;
+    color: #F8F7F3;
+    text-decoration: none;
+    font-style: italic;
   }
 
   .page .myth-desc {
     color: #303030;
     flex: 1;
-    font-family: "Emporia-Roman";
+    font-family: "Questrial";
     font-size: 28px;
     font-weight: 500;
     letter-spacing: 0;
@@ -157,9 +159,7 @@
   
   .nav-item {
     color: #F8F7F3;
-    font-family: "Hakuna-Sans";
-    font-size: 16px;
-    font-weight: 500;
+    font-family: "Emporia-Roman";
     letter-spacing: 0;
     line-height: 24px;
     margin-top: -1px;
@@ -170,8 +170,10 @@
   }
 
   .nav-link {
-    font-size: 20px;
-    font-weight: 10px;
+
+    font-size: 24px;
+    font-weight: 100px;
+    font-style: bold;
   }
   
   .page .section {
@@ -190,13 +192,51 @@
 
   /*EDIT THIS*/
   .paginate {
-    border-radius: 6px;
-    padding: 8px;
+    letter-spacing: 2px;
+    gap: 20px;
+    font-family:"Questrial";
     list-style: none;
-    display: inline-block;
-    font-family: 'Courier New', Courier, monospace;
+    height: 31.5px;
+    width: 31.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #303030;
+    
   }
 
+  .page-item {
+    list-style: none;
+    padding: 2px 12px;
+    height: 31.5px;
+    width: 31.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+    font-size: 20px;
+    
+  }
+  
+
+
+.pagination-container {
+  text-decoration: none;
+  text-align: center;
+}
+
+.prev-label {
+  color: #303030;
+  text-decoration: none;
+}
+
+.next-label {
+  color: #303030;
+  text-decoration: none;
+}
 
   .section .metric{
     align-items: flex-start;
@@ -238,9 +278,66 @@
     top: 20px;
   }
 
+  .title-training {
+    align-self: stretch;
+    color: #53653C;
+    font-family: "Emporia-Roman";
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 48px;
+    margin-top: -1px;
+    position: relative;
+    top: 20px;
+  }
+
+  .title-training-2 {
+    align-self: stretch;
+    color: #53653C;
+    font-family: "Emporia-Roman";
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 48px;
+    margin-top: -1px;
+    position: relative;
+    top: 20px;
+  }
+
+  .title-training-3 {
+      color: #53653C;
+      font-family: "Emporia-Roman";
+      font-size: 35px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      line-height: 48px;
+      margin-top: -1px;
+      left: 70px;
+      position: relative;
+      text-align: center;
+      width: 600px;
+  }
+
+   .title-training-4 {
+    align-self: stretch;
+    color: #53653C;
+    font-family: "Emporia-Roman";
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 28px;
+    margin-top: -1px;
+    position: relative;
+  }
+
+  .training-link {
+    font-family: "Questrial";
+    color: #303030;
+  }
+
   .page .text-wrapper-myth {
     align-self: stretch;
-    color: #303030;
+    color: #E89DA7;
     font-family: "Emporia-Roman";
     font-size: 35px;
     font-weight: 700;
@@ -252,8 +349,8 @@
 
   .page .text-wrapper-benefit-title{
     align-self: stretch;
-    color: #303030;
-    font-family: "Roboto-Bold", Helvetica;
+    color: #505A43;
+    font-family: "Emporia-Roman";
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 0;
@@ -266,6 +363,32 @@
   .page .text-wrapper-title {
     align-self: stretch;
     color: #E89DA7;
+    font-family: "Emporia-Roman";
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 48px;
+    margin-top: -1px;
+    text-align: center;
+    position: relative;
+  }
+
+  .text-wrapper-title-training {
+    align-self: stretch;
+    color: #53653C;
+    font-family: "Emporia-Roman";
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 48px;
+    margin-top: -1px;
+    text-align: center;
+    position: relative;
+  }
+
+   .text-wrapper-title-nutritional-value {
+    align-self: stretch;
+    color: #685656;
     font-family: "Emporia-Roman";
     font-size: 40px;
     font-weight: 700;
@@ -372,7 +495,7 @@
     margin-top: 20px;
     align-self: stretch;
     color: #303030;
-    font-family: "Emporia-Roman";
+    font-family: "Questrial";
     font-size: 18px;
     font-weight: 100;
     letter-spacing: 0;
@@ -424,7 +547,7 @@
     align-self: stretch;
     color: #685656;
     font-family: "Emporia-Roman";
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 700;
     letter-spacing: 0.5px;
     line-height: 48px;
@@ -601,6 +724,7 @@
     padding: 12px;
     position: relative;
     width: 300px;
+    height: 80px;
   }
 
   .page .primary-green-large {
@@ -617,13 +741,29 @@
     height: 80px;
   }
 
+  
+  .page .primary-brown-large {
+    align-items: center;
+    background-color: #685656;
+    border-radius: 8px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px;
+    position: relative;
+    width: 300px;
+    height: 80px;
+  }
+
+
   .input-nutritional-value {
     width: 250px;
     padding: 5px;
     border-radius: 5px;
-    font-family: "Emporia-Roman";
+    font-family: "Questrial";
     font-size: 20px;
-    border : solid 1px #303030;
+    border : solid 1px #685656;
     left: 0px;
  
   }
@@ -721,11 +861,13 @@
   }
 
    .image-cardio {
-    background-color: #d8d8d880;
+    background-color: #F8F7F3;
     flex: 1;
     flex-grow: 1;
     position: relative;
     width: 20px;
+    border-radius: 20px;
+ 
   }
 
   .image-container img {
@@ -773,7 +915,7 @@
     height: 100px;
     width: 100px;
     position: relative;
-    background-color: brown;
+
     object-fit: contain;
     
   }
@@ -947,7 +1089,7 @@
   .article-nutrition {
     align-items: flex-start;
     border: 1px solid;
-    border-color: #0000001a;
+    border-color: #685656;
     border-radius: 6px;
     display: flex;
     flex: 1;
@@ -956,8 +1098,7 @@
     justify-content: center;
     padding: 16px;
     position: relative;
-    color: #ffffff;
-    background-color: #95B6D6;
+    background-color: #F8F7F3;
   }
   
   .page .div-wrapper {
@@ -979,7 +1120,7 @@
   
   .page .image-2 {
     align-self: stretch;
-    background-color: #d8d8d880;
+    background-color: #F8F7F3;
     flex: 1;
     flex-grow: 1;
     position: relative;
@@ -994,6 +1135,23 @@
     gap: 8px;
     position: relative;
     
+  }
+
+  .frame-training {
+    align-items: flex-start;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 8px;
+    position: relative;
+    padding: 10px;
+    height: 120px;
+    
+  }
+
+  .source-desc{
+    color:  #53653C;
   }
   
   .page .title-3 {
@@ -1189,10 +1347,97 @@
     position: relative;
   }
 
+   .subtitle-training {
+    align-self: stretch;
+    color: #53653C;
+    font-family: "Questrial";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 20px;
+    position: relative;
+    list-style: none;
+  }
+
+  .source-title{
+    font-size: 14px;
+    top: 200px;
+  }
+
+  .source-desc {
+    gap: 100px;
+  }
+
+  .container-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: "Questrial";
+    color: #303030;
+
+  }
+
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 2px;
+    background-color: #eee;
+  }
+  
+  .container-checkbox:hover input ~ .checkmark {
+    background-color: #F8F7F3;
+  }
+
+  .container-checkbox input:checked ~ .checkmark {
+    background-color: #E89DA7;
+  }
+  
+ 
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .container-checkbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+ 
+  .container-checkbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
   .page .subtitle-myth {
     align-self: stretch;
     color: #00000080;
-    font-family: "Emporia-Roman";
+    font-family: "Questrial";
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0;
@@ -1495,7 +1740,7 @@
   
   .page .pagination {
     align-items: center;
-    display: inline-flex;
+    display: inline-block;
     gap: 4px;
     justify-content: center;
     left: 148px;
@@ -1629,7 +1874,7 @@
     color: #303030;
     font-family: "Questrial";
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 200;
     letter-spacing: 0;
     line-height: 28px;
     margin-top: -1px;

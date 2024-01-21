@@ -20,6 +20,12 @@ interface Food {
 function NutritionalValuePage() {
   const [foodList, setFoodList] = useState([]);
   const [itemOffset, setItemOffset] = useState(0);
+  const [currentPage, setCurrentPage] = useState(0);
+  const [totalPages, setTotalPages] = useState(0);
+  const itemsPerPage = 10;
+  const startIndex = currentPage * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const subset = foodList.slice(startIndex, endIndex);
 
   useEffect(() => {
     fetchData();
@@ -31,33 +37,27 @@ function NutritionalValuePage() {
     setFoodList(response.data);
     console.log(foodList);
     console.log(response.data);
+    setTotalPages(Math.ceil(response.data.length / itemsPerPage));
   };
-
-  const endOffset = itemOffset + 5;
-  console.log(`Loading items from ${itemOffset} to ${endOffset}`);
-  const foodListSliced = foodList.slice(itemOffset, endOffset);
-  const pageCount = Math.ceil(foodList.length / 5);
-  const handleClickPage = (event) => {
-    const newOffset = (event.selected * 10) % foodList.length;
-    console.log(
-      `User requested page number ${event.selected}, which is offset ${newOffset}`
-    );
-    setItemOffset(newOffset);
-  };
-
   const [filterStr, setFilterStr] = useState("");
   const navigate = useNavigate();
+
+  const handlePageChange = (selectedPage) => {
+    setCurrentPage(selectedPage.selected);
+  };
 
   return (
     <div className="page">
       <div className="section">
         <div className="container">
           <div>
-            <a onClick={() => navigate(-1)} className="title-9">
+            <a onClick={() => navigate(-1)} className="title-9-what-to-eat">
               ⬅️Back to Food
             </a>
           </div>
-          <h1 className="text-wrapper-title">Nutritional Value of Foods</h1>
+          <h1 className="text-wrapper-title-nutritional-value">
+            Nutritional Value of Foods
+          </h1>
         </div>
       </div>
 
@@ -71,11 +71,12 @@ function NutritionalValuePage() {
             className="input-nutritional-value"
           />
           <div className="list">
-            {foodList
+            {(filterStr === "" ? subset : foodList)
               .filter(function filterFood(food: Food) {
                 if (filterStr === "") {
-                  return foodList;
+                  return subset;
                 }
+
                 return food.foodName
                   .toLowerCase()
                   .includes(filterStr.toLowerCase());
@@ -98,17 +99,21 @@ function NutritionalValuePage() {
                   </div>
                 </div>
               ))}
-          </div>
-          <div>
-            <ReactPaginate
-              breakLabel="..."
-              nextLabel="Next"
-              onPageChange={handleClickPage}
-              pageCount={pageCount}
-              previousLabel="Prev"
-              renderOnZeroPageCount={null}
-              className="paginate"
-            />
+            <div className="pagination-container">
+              <ReactPaginate
+                pageCount={totalPages}
+                onPageChange={handlePageChange}
+                forcePage={currentPage}
+                breakLabel="..."
+                containerClassName="paginate"
+                pageClassName="page-item"
+                activeClassName="active"
+                previousLabel="Prev"
+                previousLinkClassName="prev-label"
+                nextLabel="Next"
+                nextLinkClassName="next-label"
+              />
+            </div>
           </div>
         </div>
       </div>

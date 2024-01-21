@@ -99,7 +99,12 @@ function FoodContent() {
 
           <div className="calculator">
             <form method="post" onSubmit={handleSubmit}>
-              <div className="title">Calorie Calculator</div>
+              <div
+                className="title"
+                style={{ color: "#685656", fontWeight: "200px" }}
+              >
+                Calorie Calculator
+              </div>
               <div className="div-form">
                 <label className="title-4-calculator">Age</label>
                 <input
@@ -357,7 +362,7 @@ function FoodContent() {
             <div className="button-eat-container">
               <Link to="/whattoeat">
                 <button className="button btn-eat">
-                  <div className="primary-pink">
+                  <div className="primary-pink-large">
                     <div className="title-2">What To Eat</div>
                   </div>
                 </button>

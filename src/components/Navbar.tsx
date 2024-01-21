@@ -9,12 +9,7 @@ function Navbar() {
       <Link to="/" className="nav-link" aria-current="page">
         <img src="src\assets\images\logo.png" className="rectangle" />
       </Link>
-      <Link
-        to="/"
-        className="title-nav"
-        aria-current="page"
-        style={{ color: "#F8F7F3", textDecoration: "none" }}
-      >
+      <Link to="/" className="title-nav" aria-current="page">
         {" "}
         HelpAbby
       </Link>
