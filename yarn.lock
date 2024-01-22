@@ -305,6 +305,13 @@
     "@types/history" "^4.7.11"
     "@types/react" "*"
 
+"@types/react-sound@^1.2.6":
+  version "1.2.6"
+  resolved "https://registry.npmjs.org/@types/react-sound/-/react-sound-1.2.6.tgz"
+  integrity sha512-ftBRzvT+vCRc9U4jQ3f7SneHHSi1xx7yWGwfLNT1hRAQ2SoVmC0x4gKdV9ukrJo+dhNHL3nTEtJE0RK98x3Jdw==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react@*", "@types/react@^18.0.27":
   version "18.2.39"
   resolved "https://registry.npmjs.org/@types/react/-/react-18.2.39.tgz"
@@ -507,9 +514,9 @@ fill-range@^7.0.1:
     to-regex-range "^5.0.1"
 
 follow-redirects@^1.15.0:
-  version "1.15.3"
-  resolved "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.15.3.tgz"
-  integrity sha512-1VzOtuEM8pC9SFU1E+8KfTjZyMztRsgEfwQl44z8A25uy13jSzTj6dyK2Df52iV0vgHCfBwLhDWevLn95w5v6Q==
+  version "1.15.5"
+  resolved "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.15.5.tgz"
+  integrity sha512-vSFWUON1B+yAw1VN4xMfxgn5fTUiaOzAJCKBwIIgT/+7CuGy9+r+5gITvP62j3RmaD5Ph65UaERdOSRGUzZtgw==
 
 form-data@^4.0.0:
   version "4.0.0"
@@ -835,9 +842,9 @@ update-browserslist-db@^1.0.13:
     picocolors "^1.0.0"
 
 vite@^4.1.0:
-  version "4.5.0"
-  resolved "https://registry.npmjs.org/vite/-/vite-4.5.0.tgz"
-  integrity sha512-ulr8rNLA6rkyFAlVWw2q5YJ91v098AFQ2R0PRFwPzREXOUJQPtFUG0t+/ZikhaOCDqFoDhN6/v8Sq0o4araFAw==
+  version "4.5.2"
+  resolved "https://registry.npmjs.org/vite/-/vite-4.5.2.tgz"
+  integrity sha512-tBCZBNSBbHQkaGyhGCDUGqeo2ph8Fstyp6FMSvTtsXeZSPpSMGlviAOav2hxVTqFcx8Hj/twtWKsMJXNY0xI8w==
   dependencies:
     esbuild "^0.18.10"
     postcss "^8.4.27"
