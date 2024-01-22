@@ -710,7 +710,7 @@ function TrainingPage() {
             <div className="button-eat-container">
               <Link to="/myths">
                 <button className="button btn-eat">
-                  <div className="primary-green-large">
+                  <div className="primary-brown-large">
                     <div className="title-2">Go to Myths➡️ </div>
                   </div>
                 </button>
