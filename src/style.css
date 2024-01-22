@@ -758,7 +758,7 @@
 
 
   .input-nutritional-value {
-    width: 250px;
+    width: 300px;
     padding: 5px;
     border-radius: 5px;
     font-family: "Questrial";
@@ -1384,14 +1384,21 @@
 
   }
 
-  .container input {
+  .container-checkbox input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
     height: 0;
     width: 0;
   }
+
+  .container a{
+    cursor: pointer;
+  }
   
+  .container select{
+    cursor: pointer;
+  }
   .checkmark {
     position: absolute;
     top: 0;

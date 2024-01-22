@@ -30,6 +30,7 @@ function NutritionalValuePage() {
   useEffect(() => {
     fetchData();
   }, []);
+
   const apiURL = "http://127.0.0.1:8000/food/foodlist";
   const fetchData = async () => {
     const response = await axios.get(apiURL);
