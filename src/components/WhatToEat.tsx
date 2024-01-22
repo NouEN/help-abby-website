@@ -1,19 +1,7 @@
-import React, { Component } from "react";
 import "../style.css";
-import Navbar from "./Navbar";
 import { Link, useNavigate } from "react-router-dom";
 
-type FoodProps = {
-  foodId: string;
-  foodName: string;
-  calories: number;
-  category: string;
-  carbs: number;
-  protein: number;
-  fat: number;
-};
-
-function WhatToEat(props: FoodProps) {
+function WhatToEat() {
   const navigate = useNavigate();
   return (
     <div className="page">

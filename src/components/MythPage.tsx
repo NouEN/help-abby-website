@@ -1,10 +1,7 @@
-import React, { Component } from "react";
 import Navbar from "./Navbar";
 import "../style.css";
-import PropTypes from "prop-types";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
 
 type Myth = {
   id: number;

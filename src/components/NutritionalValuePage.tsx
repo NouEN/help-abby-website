@@ -1,6 +1,3 @@
-import React, { Component } from "react";
-import AdminNavbar from "./AdminNavbar";
-import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import "../style.css";
@@ -19,7 +16,6 @@ interface Food {
 
 function NutritionalValuePage() {
   const [foodList, setFoodList] = useState([]);
-  const [itemOffset, setItemOffset] = useState(0);
   const [currentPage, setCurrentPage] = useState(0);
   const [totalPages, setTotalPages] = useState(0);
   const itemsPerPage = 10;
@@ -43,7 +39,7 @@ function NutritionalValuePage() {
   const [filterStr, setFilterStr] = useState("");
   const navigate = useNavigate();
 
-  const handlePageChange = (selectedPage) => {
+  const handlePageChange = (selectedPage: any) => {
     setCurrentPage(selectedPage.selected);
   };
 

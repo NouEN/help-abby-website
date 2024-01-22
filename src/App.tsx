@@ -42,19 +42,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomeContent />} />
         <Route path="/food" element={<FoodContent></FoodContent>} />
-        <Route
-          path="/whattoeat"
-          element={
-            <WhatToEat
-              foodId="1"
-              foodName="granola"
-              calories={500}
-              carbs={50}
-              protein={50}
-              fat={50}
-            ></WhatToEat>
-          }
-        ></Route>
+        <Route path="/whattoeat" element={<WhatToEat></WhatToEat>}></Route>
         <Route path="/training" element={<TrainingPage></TrainingPage>} />
         <Route path="/myths" element={<MythPage></MythPage>} />
         <Route

@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "../style.css";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
-import AdminLogin from "./AdminLogin";
 
 class HomeContent extends Component {
   render() {

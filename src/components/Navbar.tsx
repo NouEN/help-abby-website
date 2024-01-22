@@ -1,6 +1,4 @@
-import { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "../style.css";
 
 function Navbar() {
