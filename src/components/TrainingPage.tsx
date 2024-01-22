@@ -54,6 +54,15 @@ function TrainingPage() {
             Cardio training involves multiple muscle on your body so it can also
             be considered a full body exercise.
           </p>
+          <p className="div-desc">
+            World Health Organization (WHO) recommends children and adolescents
+            (age 5-17) should do at least an average of 60 minutes per day of
+            moderate to vigorous intensity, mostly aerobic, physical activity,
+            across the week. meanwhile for adults (age 18-64) and older adults
+            (age 65 or older)should do at least 150– 300 minutes of moderate
+            intensity aerobic physical activity; or at least 75–150 minutes of
+            vigorous intensity aerobic physical activity.
+          </p>
         </div>
       </div>
 
@@ -281,6 +290,12 @@ function TrainingPage() {
             training can be done with bodyweight exercise or with equipments
             such as dumbbells, barbell, resistance band, and machine.
           </p>
+          <p className="div-desc">
+            WHO recommends children and adolescents to incorporate strength
+            training for at least 3 days a week. Meanwhile for adults and older
+            adults, it is recommended to do at least 2 days of strength training
+            that involve all major muscle groups.
+          </p>
 
           <hr />
           <div className="image-container">
@@ -470,11 +485,12 @@ function TrainingPage() {
             }}
           />
           <p className="div-desc">
-            Cardio training is any activity that mostly involves the heart and
-            lungs to work harder. It usually increases your heart rate to a
-            certain level based on how vigorous your effort is when doing it.
-            Cardio training involves multiple muscle on your body so it can also
-            be considered a full body exercise.
+            Flexibility training is a low-intensity exercise that has a goal to
+            increase the total range of motion of a joint or group of joints.
+            Flexibility training also involves working on stability because it
+            decreases the chance for muscle imbalance so it prevents us from
+            injuries. Flexibility training can boost our quality of life by
+            boosting our sport performance and making daily activities easier.
           </p>
 
           <div className="image-container">
