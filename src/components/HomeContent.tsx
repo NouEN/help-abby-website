@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "../style.css";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function HomeContent() {
   return (
