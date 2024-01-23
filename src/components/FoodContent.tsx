@@ -268,9 +268,9 @@ function FoodContent() {
             </div>
           </div>
 
-          <div className="div" hidden={calculated == true ? false : true}>
-            <div className="title">Great!</div>
-            <div className="div-desc">
+          <div className="div" hidden={calculated ? false : true}>
+            <div className="title-nutrition-2">Great!</div>
+            <div className="div-desc" style={{ top: "10px" }}>
               Now we know what her BMR and TDEE calories is. To lose weight, we
               should eat at 200 - 500 less than our TDEE calories and DON'T go
               below the BMR calories.
@@ -340,10 +340,10 @@ function FoodContent() {
       <div className="section" hidden={isFalse == true ? false : true}>
         <div className="container">
           <div className="div">
-            <p className="title" style={{ color: "red" }}>
+            <p className="title-nutrition-2" style={{ color: "red" }}>
               Wrong!
             </p>
-            <p className="div-desc">
+            <p className="div-desc" style={{ top: "10px" }}>
               1928 - 200 is 1728. So her deficit calories is around 1700
               calories.
             </p>
