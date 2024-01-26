@@ -40,8 +40,9 @@ function FoodContent() {
       setTdee(response.data.tdee);
       setCalculated(true);
       console.log("calculated is {}", calculated);
+      alert("Successfully calculated BMR and TDEE!");
     } else {
-      alert("Wrong input! Input Abby's measurement details.");
+      alert(response.data.message);
     }
   };
 
