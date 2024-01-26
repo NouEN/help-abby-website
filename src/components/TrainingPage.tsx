@@ -7,12 +7,11 @@ function TrainingPage() {
   const [run, setRun] = useState(false);
   const [swim, setSwim] = useState(false);
   const [walk, setWalk] = useState(false);
-  const [zumba, setZumba] = useState(false);
   const [cycle, setCycle] = useState(false);
   const [isAnswerCorrect, setIsAnswerCorrect] = useState(false);
 
   const handleSubmitQuiz = async () => {
-    if (swim && walk && zumba && cycle && !run) {
+    if ((swim || walk || cycle) && !run) {
       setIsAnswerCorrect(true);
       alert("Correct! :)");
     } else {
@@ -669,15 +668,6 @@ function TrainingPage() {
                   type="checkbox"
                   checked={cycle}
                   onClick={() => setCycle(!cycle)}
-                ></input>
-                <span className="checkmark"></span>
-              </label>
-              <label className="container-checkbox">
-                Zumba
-                <input
-                  type="checkbox"
-                  checked={zumba}
-                  onClick={() => setZumba(!zumba)}
                 ></input>
                 <span className="checkmark"></span>
               </label>
