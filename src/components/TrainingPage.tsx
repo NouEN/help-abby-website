@@ -95,10 +95,16 @@ function TrainingPage() {
                 </a>
                 <div className="selection">
                   <div className="label-normal">
-                    <div className="label-text">Cardiovascular</div>
+                    <div className="label-text">High Impact</div>
                   </div>
                   <div className="label-normal">
-                    <div className="label-text">Stamina</div>
+                    <div className="label-text">Not Pregnancy Friendly</div>
+                  </div>
+                  <div className="label-normal">
+                    <div className="label-text">Not Joint Friendly</div>
+                  </div>
+                  <div className="label-normal">
+                    <div className="label-text">Minimal Equipment</div>
                   </div>
                 </div>
               </div>
@@ -129,10 +135,16 @@ function TrainingPage() {
                 </a>
                 <div className="selection">
                   <div className="label-normal">
-                    <div className="label-text">Cardiovascular</div>
+                    <div className="label-text">Low Impact</div>
                   </div>
                   <div className="label-normal">
-                    <div className="label-text">Stamina</div>
+                    <div className="label-text">All Ages</div>
+                  </div>
+                  <div className="label-normal">
+                    <div className="label-text">Joint Friendly</div>
+                  </div>
+                  <div className="label-normal">
+                    <div className="label-text">Pregnancy Friendly</div>
                   </div>
                 </div>
               </div>
@@ -164,10 +176,16 @@ function TrainingPage() {
                 </a>
                 <div className="selection">
                   <div className="label-normal">
-                    <div className="label-text">Cardiovascular</div>
+                    <div className="label-text">Low Impact</div>
                   </div>
                   <div className="label-normal">
-                    <div className="label-text">Stamina</div>
+                    <div className="label-text">Full Body</div>
+                  </div>
+                  <div className="label-normal">
+                    <div className="label-text">Pregnancy Friendly</div>
+                  </div>
+                  <div className="label-normal">
+                    <div className="label-text">All Ages</div>
                   </div>
                 </div>
               </div>
@@ -341,6 +359,12 @@ function TrainingPage() {
                   <div className="label-normal">
                     <div className="label-text">Leg Strength</div>
                   </div>
+                  <div className="label-normal">
+                    <div className="label-text">Weighted or Bodyweighted</div>
+                  </div>
+                  <div className="label-normal">
+                    <div className="label-text">All Ages</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -378,6 +402,12 @@ function TrainingPage() {
                   <div className="label-normal">
                     <div className="label-text">Core Stability</div>
                   </div>
+                  <div className="label-normal">
+                    <div className="label-text">No Equipment</div>
+                  </div>
+                  <div className="label-normal">
+                    <div className="label-text">All Ages</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -411,6 +441,12 @@ function TrainingPage() {
                   </div>
                   <div className="label-normal">
                     <div className="label-text">Muscle Building</div>
+                  </div>
+                  <div className="label-normal">
+                    <div className="label-text">No Equipment</div>
+                  </div>
+                  <div className="label-normal">
+                    <div className="label-text">All Ages</div>
                   </div>
                 </div>
               </div>
@@ -529,10 +565,19 @@ function TrainingPage() {
                 </a>
                 <div className="selection">
                   <div className="label-normal">
+                    <div className="label-text">Low Impact</div>
+                  </div>
+                  <div className="label-normal">
                     <div className="label-text">Flexibility</div>
                   </div>
                   <div className="label-normal">
                     <div className="label-text">Muscle Recovery</div>
+                  </div>
+                  <div className="label-normal">
+                    <div className="label-text">Pregnancy Friendly</div>
+                  </div>
+                  <div className="label-normal">
+                    <div className="label-text">All Ages</div>
                   </div>
                 </div>
               </div>
@@ -563,10 +608,19 @@ function TrainingPage() {
                 </a>
                 <div className="selection">
                   <div className="label-normal">
+                    <div className="label-text">Low Impact</div>
+                  </div>
+                  <div className="label-normal">
                     <div className="label-text">Flexibility</div>
                   </div>
                   <div className="label-normal">
                     <div className="label-text">Stress Relief</div>
+                  </div>
+                  <div className="label-normal">
+                    <div className="label-text">Pregnancy Friendly</div>
+                  </div>
+                  <div className="label-normal">
+                    <div className="label-text">All Ages</div>
                   </div>
                 </div>
               </div>
