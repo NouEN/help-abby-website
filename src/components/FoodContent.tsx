@@ -19,6 +19,8 @@ function FoodContent() {
   const [activityLevel, setActivityLevel] = useState("");
   const [bmr, setBmr] = useState(0);
   const [tdee, setTdee] = useState(0);
+  const [condition, setCondition] = useState("");
+  const [bmi, setBmi] = useState(0);
   const [calculated, setCalculated] = useState(false);
   const [count, setCount] = useState(0);
   const [isTrue, setisTrue] = useState(false);
@@ -26,6 +28,18 @@ function FoodContent() {
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    if (age < 0) {
+      alert("Age can't be below 0! Please input a number larger than zero.");
+      return;
+    } else if (height < 0) {
+      alert("Height can't be below 0! Please input a number larger than zero.");
+      return;
+    } else if (weight < 0) {
+      alert("weight can't be below 0! Please input a number larger than zero.");
+      return;
+    } else if (activityLevel == "") {
+      alert("Please select one activity level.");
+    }
     const data = { age, gender, weight, height, activityLevel };
 
     const response = await axios.post(
@@ -38,6 +52,8 @@ function FoodContent() {
     if (response.data.status == "SUCCESS") {
       setBmr(response.data.bmr);
       setTdee(response.data.tdee);
+      setBmi(response.data.bmi);
+      setCondition(response.data.condition);
       setCalculated(true);
       console.log("calculated is {}", calculated);
       alert("Successfully calculated BMR and TDEE!");
@@ -256,6 +272,14 @@ function FoodContent() {
           </div>
 
           <div className="list-calorie">
+            <div className="metric">
+              <div className="title-13">BMI</div>
+
+              <div className="data" id="data">
+                {bmi} {condition}
+              </div>
+            </div>
+
             <div className="metric">
               <div className="title-13">Basal Metabolic Rate</div>
               <div className="data" id="data">
